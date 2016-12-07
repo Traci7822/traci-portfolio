@@ -36,13 +36,25 @@
   color: black;
 }
 
-.header .nav {
-  border-top: solid 1px #24396E;
-  margin-top: 40px;
-  background-color: #B8D7EC;
-  height: 150px;
-}
-
 .lastName {
   color: black;
+}
+
+.nav {
+  padding: 15px;
+  text-align: center;
+  font-size: 1.75em;
+  font-family: 'eurof35';
+  background-color: #365CAB;
+  font-weight: bold;
+}
+
+.nav a {
+  color: white;
+}
+
+.section {
+  margin-top: 80px;
+  background-color: #426BC4;
+  height: 500px;
 }

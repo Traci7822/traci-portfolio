@@ -19,11 +19,22 @@
 
 .header h1 {
   font-size: 8.5em;
+  padding-bottom: 0;
   margin-bottom: 0;
+  letter-spacing: 4px;
+  line-height: .9;
 }
 
 .header h3 {
+  padding-left: 25px;
+  padding-top: 0;
   margin-top: 0;
   font-size: 3em;
   font-family: 'eurof35';
+}
+
+.header .nav {
+  margin-top: 40px;
+  background-color: #B8D7EC;
+  height: 150px;
 }

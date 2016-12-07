@@ -3,6 +3,11 @@
   src: font-url('chicken.ttf')
 }
 
+@font-face {
+  font-family: 'eurof35';
+  src: font-url('eurof35.ttf')
+}
+
 .header {
   margin-top: 50px;
   font-family: 'chicken';
@@ -10,4 +15,15 @@
 
 .header img {
   width: 200px;
+}
+
+.header h1 {
+  font-size: 8.5em;
+  margin-bottom: 0;
+}
+
+.header h3 {
+  margin-top: 0;
+  font-size: 3em;
+  font-family: 'eurof35';
 }

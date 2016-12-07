@@ -1,5 +1,11 @@
+@font-face {
+  font-family: 'chicken';
+  src: font-url('chicken.ttf')
+}
+
 .header {
   margin-top: 50px;
+  font-family: 'chicken';
 }
 
 .header img {

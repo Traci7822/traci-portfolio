@@ -5,8 +5,35 @@
   height: 500px;
 }
 
-.showcase-content {
-  position: absolute;
-  width: 75%;
-  margin: 0 auto;
+#about {
+  width: auto;
+  font-family: 'eurof35';
+}
+
+.introtext {
+  font-size: 5em;
+}
+.content {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2em;
+}
+
+#about-contact {
+  display: inline-block;
+  line-height: 35px;
+  margin: 8px;
+  padding: 0 15px;
+  font-size: 25px;
+  position: relative;
+  opacity: .999;
+  background: white;
+}
+
+#about-contact:hover{
+  transition: color 0.4s ease 0s;
+  color: #499DC3;
+  border: .5px solid #24396E;
+  background: white;
 }

@@ -1,5 +1,6 @@
 $(document).ready(function() {
   hideSections();
+  showHome();
 
   $(".navItem").click(function(event) {
     event.preventDefault();
@@ -7,6 +8,10 @@ $(document).ready(function() {
   })
 
 });
+
+function showHome() {
+  $("#about-content").show()
+}
 
 function hideSections() {
   var items = document.querySelectorAll(".navItem");

@@ -1,10 +1,17 @@
 $(document).ready(function() {
-  hideSections();
   showHome();
+  hideSections();
+  hideResumeSections();
 
   $(".navItem").click(function(event) {
     event.preventDefault();
     showPanel(this);
+    hideResumeSections();
+  })
+
+  $(".resumeItem").click(function(event) {
+    event.preventDefault();
+    showResumeSection(this);
   })
 
 });
@@ -26,4 +33,15 @@ function showPanel(section){
   var panel = $(section).attr('id');
   hideSections();
   $("#" + panel + "-content").show();
+}
+
+function hideResumeSections() {
+  var items = document.querySelectorAll(".resumeItem");
+  for (var i = 0; i < items.length; i++) {
+    $("#" + items[i].id + "-content").hide();
+  }
+}
+function showResumeSection(section) {
+  hideResumeSections();
+  $("#" + section.id + "-content").show();
 }

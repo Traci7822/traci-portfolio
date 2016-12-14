@@ -17,51 +17,6 @@
   font-size: 2em;
 }
 
-#about {
-  width: auto;
-}
-
-#about-contact {
-  display: inline-block;
-  line-height: 35px;
-  margin: 8px;
-  padding: 0 15px;
-  font-size: 25px;
-  position: relative;
-  opacity: .999;
-  background: white;
-  border: none;
-  margin-top: 25px;
-}
-
-#about-contact:hover {
-  transition: color 0.4s ease 0s;
-  color: #499DC3;
-  border: .5px solid #24396E;
-  background: white;
-}
-
-.icon {
-  width: 50px;
-  box-shadow: 0px 0px 3px #24396E;
-  border-radius: 100px;
-  margin: 10px;
-  margin-top: 80px;
-}
-
-.contact-info {
-  margin-top: 50px;
-  font-size: 1.5em;
-}
-
-#this-project {
-  margin-top: 200px;
-}
-
-.glyphicon .glyphicon-check {
-  font-size: 20px;
-}
-
 .resumeContent {
   width: 100%;
   background: #499DC3;
@@ -73,6 +28,7 @@
 
 .resumeLinks {
   margin-top: 50px;
+  width: 100%;
 }
 
 .resumeItem {

@@ -27,11 +27,12 @@
 	}
 	.card__padding {
 		padding: 1.6rem;
+		border-top: .5px solid #24396E
 	}
 	.card__image {
 		height: 225px;
 		background-color: lighten(#499DC3, 30%);
-		border-bottom: .5px solid #24396E;
+
 	}
 	.card__image img {
 		width: auto;
@@ -40,7 +41,6 @@
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		border-bottom: .5px solid #24396E;
 	}
 	.title {
 		margin-top: 0px;
@@ -50,6 +50,11 @@
 .click {
 	padding-top: 5px;
 	padding-bottom: 5px;
+}
+
+.wrapper .githubBlog {
+	border-left: 40px solid white;
+	border-right: 40px solid white;
 }
 
 //make divs responsive

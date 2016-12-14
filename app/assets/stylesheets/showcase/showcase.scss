@@ -180,3 +180,13 @@ hr {
 }
 
 // align resume columns to the right more
+
+#employmentWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  text-indent: -17px;
+}

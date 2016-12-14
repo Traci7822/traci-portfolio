@@ -1,7 +1,7 @@
 $(document).ready(function() {
-  showHome();
   hideSections();
   hideResumeSections();
+  showHome();
 
   $(".navItem").click(function(event) {
     event.preventDefault();
@@ -28,8 +28,6 @@ function hideSections() {
 }
 
 function showPanel(section){
-  $(".navItem").removeClass("active");
-  $(section).addClass("active");
   var panel = $(section).attr('id');
   hideSections();
   $("#" + panel + "-content").show();

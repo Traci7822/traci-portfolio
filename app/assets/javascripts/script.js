@@ -14,6 +14,12 @@ $(document).ready(function() {
     showResumeSection(this);
   })
 
+  $(".contactButton").click(function(event) {
+    event.preventDefault();
+    hideSections();
+    $("#contact-content").show();
+  })
+
 });
 
 function showHome() {

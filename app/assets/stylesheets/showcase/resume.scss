@@ -37,12 +37,11 @@
 }
 
 .resumeText {
-  width: 75%;
+  width: 100%;
 }
 
 .resumeLinks {
   margin-top: 50px;
-  width: 100%;
 }
 
 .resumeItem {
@@ -58,6 +57,9 @@
   background-color: #499DC3;
   padding-top: 70px;
   margin-bottom: 50px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #resumeItems h3 {

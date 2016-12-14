@@ -69,11 +69,13 @@
 
 .resumeText {
   width: 75%;
+
 }
 
 .resumeLinks {
   margin-top: 50px;
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
+
 }
 
 .resumeItem {
@@ -85,14 +87,9 @@
   border-radius: 5px;
 }
 
-.resumeHeader h4 {
-  margin-top: 20px;
-  font-size: 1.2em;
-}
-
 #resumeItems {
   background-color: #499DC3;
-  margin-top: 150px;
+  padding-top: 70px;
   margin-bottom: 50px;
 }
 

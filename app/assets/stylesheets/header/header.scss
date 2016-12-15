@@ -8,9 +8,14 @@
   src: font-url('eurof35.ttf')
 }
 
+body {
+  background-color: #9cc9de;
+}
 .header {
-  margin-top: 50px;
   font-family: 'chicken';
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .header img {

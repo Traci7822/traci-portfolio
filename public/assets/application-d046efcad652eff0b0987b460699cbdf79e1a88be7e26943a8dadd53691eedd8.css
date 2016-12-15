@@ -8854,7 +8854,7 @@ button.close {
 /* line 1, /Users/traci/code/portfolio/app/assets/stylesheets/showcase/about.scss */
 #aboutMe {
   width: 50%;
-  background: #499DC3;
+  background: #9cc9de;
   margin-left: auto;
   margin-right: auto;
 }
@@ -8876,13 +8876,13 @@ button.close {
 /* line 21, /Users/traci/code/portfolio/app/assets/stylesheets/showcase/about.scss */
 #about-contact:hover {
   transition: color 0.4s ease 0s;
-  color: #499DC3;
+  color: #9cc9de;
   border: .5px solid #24396E;
   background: white;
 }
 /* line 1, /Users/traci/code/portfolio/app/assets/stylesheets/showcase/blog.scss */
 #blogPage {
-  background-color: #499DC3;
+  background-color: #9cc9de;
   height: 700px;
 }
 /* line 2, /Users/traci/code/portfolio/app/assets/stylesheets/showcase/card.scss */
@@ -9024,7 +9024,7 @@ button.close {
 /* line 34, /Users/traci/code/portfolio/app/assets/stylesheets/showcase/resume.scss */
 .resumeContent {
   width: 100%;
-  background: #499DC3;
+  background: #9cc9de;
 }
 
 /* line 39, /Users/traci/code/portfolio/app/assets/stylesheets/showcase/resume.scss */
@@ -9049,7 +9049,7 @@ button.close {
 
 /* line 56, /Users/traci/code/portfolio/app/assets/stylesheets/showcase/resume.scss */
 #resumeItems {
-  background-color: #499DC3;
+  background-color: #9cc9de;
   padding-top: 70px;
   margin-bottom: 50px;
   width: 75%;
@@ -9123,7 +9123,7 @@ hr {
 .section {
   box-shadow: 0px -1px 7px black;
   margin-top: 80px;
-  background-color: #499DC3;
+  background-color: #9cc9de;
   height: 650px;
   font-family: 'eurof35';
 }

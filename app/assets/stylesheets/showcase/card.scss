@@ -13,17 +13,21 @@
 	  		0 1px 3px rgba(0,0,0, 0.12),
 	    	0 1px 2px rgba(0,0,0, 0.24);
 			}
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
+		}
+// 	display: flex;
+// 	flex-direction: row;
+// 	justify-content: center;
 	.card {
 		background-color: #fff;
-		align-self: flex-start;
-		width: 25%;
-		margin: 40px 20px 20px 20px;
-		height: 425px;
+		// align-self: flex-start;
+		// width: 25%;
+		// margin: 40px 20px 20px 20px;
+		// height: 425px;
 		border: .5px solid #24396E;
-
+		margin-bottom: 20px;
+		max-width: 350px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.card__padding {
 		padding: 1.6rem;
@@ -31,7 +35,7 @@
 	}
 	.card__image {
 		height: 225px;
-		background-color: lighten(#499DC3, 30%);
+		background-color: #9cc9de;
 
 	}
 	.card__image img {
@@ -46,21 +50,26 @@
 		display: inline-block;
 		vertical-align: middle;
 		line-height: normal;
-		height: 110px;
+		height: 100px;
 	}
-	.card_article {
-
-	}
-}
-
+// 	.card_article {
+//
+// 	}
+// }
+//
 .click {
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
-
+//
 .wrapper .githubBlog {
 	border-left: 40px solid white;
 	border-right: 40px solid white;
 }
 
-//make divs responsive
+.wrapper .webdevelopment {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+//
+// //make divs responsive

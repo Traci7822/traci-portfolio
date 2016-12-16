@@ -8,9 +8,9 @@ $(document).ready(function() {
     event.preventDefault();
     showPanel(this);
     hideResumeSections();
-    // if (this.id == "resume") {
-    //   $("#technicalSkills-content").show();
-    // }
+    if (this.id == "resume") {
+      $("#technicalSkills-content").show();
+    }
   });
 
   $(".resumeItem").click(function(event) {

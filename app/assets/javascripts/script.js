@@ -11,28 +11,28 @@ $(document).ready(function() {
     if (this.id == "resume") {
       $("#technicalSkills-content").show();
     }
-  })
+  });
 
   $(".resumeItem").click(function(event) {
     event.preventDefault();
     showResumeSection(this);
-  })
+  });
 
   $(".contactButton").click(function(event) {
     event.preventDefault();
     hideSections();
     $("#contact-content").show();
-  })
+  });
 
   $(".trailInfo").click(function(event) {
     event.preventDefault();
     showTrailSections(this);
-  })
+  });
 
 });
 
 function showHome() {
-  $("#about-content").show()
+  $("#about-content").show();
 }
 
 function hideSections() {

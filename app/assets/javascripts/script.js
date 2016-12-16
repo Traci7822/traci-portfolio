@@ -8,6 +8,7 @@ $(document).ready(function() {
     event.preventDefault();
     showPanel(this);
     hideResumeSections();
+    showHome();
     if (this.id == "resume") {
       $("#technicalSkills-content").show();
     }

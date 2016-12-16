@@ -1,0 +1,46 @@
+
+<div class="altFuel-content altFuel-display-container projectDisplay">
+  <h1>Colorado Alternative Fuel Stations</h1>
+  <div class="projectDescription">
+    <h3>Colorado Alternative Fuel Stations is a web application to discover alternative fuel stations and their relevant data acquired from data.colorado.gov. It is constructed with a Ruby on Rails back-end to persist and render JSON data to the AngularJS front-end. </h3>
+  </div>
+
+  <div class="projectImages">
+    <%= image_tag("altfuel5.png", :alt => "altfuel5", :class => "altFuelPic project projectItemPic", :id => "altfuel5") %>
+    <%= image_tag("altfuel6.png", :alt => "altfuel6", :class => "altFuelPic project projectItemPic", :id => "altfuel6") %>
+    <%= image_tag("altfuel1.png", :alt => "altfuel1", :class => "altFuelPic project projectItemPic", :id => "altfuel1") %>
+    <%= image_tag("altfuel2.png", :alt => "altfuel2", :class => "altFuelPic project projectItemPic", :id => "altfuel2") %>
+    <%= image_tag("altfuel4.png", :alt => "altfuel4", :class => "altFuelPic project projectItemPic", :id => "altfuel4") %>
+  </div>
+  <h3><a href="https://github.com/Traci7822/alternative_fuel_stations" target="_blank">https://github.com/Traci7822/alternative_fuel_stations</a></h3>
+
+  <div class="slideshowButtons">
+    <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+    <a class="w3-btn-floating w3-display-right" onclick="plusDivs(+1)">&#10095;</a>
+  </div>
+
+
+  <div class="projectReturn">
+    <a href="#" class="navItem" id="projects">Return to Projects</a>
+  </div>
+</div>
+
+<script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName('altFuelPic');
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+  }
+</script>

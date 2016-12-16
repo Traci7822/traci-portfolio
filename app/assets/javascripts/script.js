@@ -1,7 +1,7 @@
 $(document).ready(function() {
   hideSections();
   hideResumeSections();
-  hideTrailSections();
+  hideProjectSections();
   showHome();
 
   $(".navItem").click(function(event) {
@@ -24,9 +24,9 @@ $(document).ready(function() {
     $("#contact-content").show();
   });
 
-  $(".trailInfo").click(function(event) {
+  $(".projectItem").click(function(event) {
     event.preventDefault();
-    showTrailSections(this);
+    showProjectSections(this);
   });
 
 });
@@ -59,16 +59,15 @@ function showResumeSection(section) {
   $("#" + section.id + "-content").show();
 }
 
-function hideTrailSections() {
+function hideProjectSections() {
   var items = document.querySelectorAll(".project");
   for (var i = 0; i < items.length; i++) {
     $("#" + items[i].id + "-content").hide();
   }
 }
 
-function showTrailSections(section) {
+function showProjectSections(section) {
   hideSections();
-  hideTrailSections();
-
+  hideProjectSections();
   $("#" + section.id + "-content").show();
 }

@@ -45,6 +45,7 @@ function hideSections() {
 function showPanel(section){
   var panel = $(section).attr('id');
   hideSections();
+  hideProjectSections();
   $("#" + panel + "-content").show();
 }
 

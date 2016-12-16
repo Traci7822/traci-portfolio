@@ -38,10 +38,13 @@
 .projectItemPic {
   margin-left: auto;
   margin-right: auto;
-  width: 30%;
+  max-width: 30%;
+  width: auto;
   border: 3px solid #24396E;
   margin-top: 30px;
   margin-bottom: 20px;
+  max-height: 500px;
+  height: auto;
 }
 
 .slideshowButtons {

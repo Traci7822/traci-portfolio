@@ -8,6 +8,9 @@ $(document).ready(function() {
     event.preventDefault();
     showPanel(this);
     hideResumeSections();
+    if (this.id == "resume") {
+      $("#technicalSkills-content").show();
+    }
   })
 
   $(".resumeItem").click(function(event) {
@@ -66,6 +69,6 @@ function hideTrailSections() {
 function showTrailSections(section) {
   hideSections();
   hideTrailSections();
-  
+
   $("#" + section.id + "-content").show();
 }

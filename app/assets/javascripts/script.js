@@ -21,14 +21,14 @@ $(document).ready(function() {
     $("#contact-content").show();
   });
 
-  $(".projectItem").click(function(event) {
+  $(".project").click(function(event) {
     //all content showing
     event.preventDefault();
     hideSections();
     hideResumeLinks();
     hideProjectSections();
     // showProjectSections(this);
-    $("#" + section.id + "-content").show();
+    // $("#" + section.id + "-content").show();
 
   });
 });

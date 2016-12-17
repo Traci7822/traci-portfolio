@@ -1,13 +1,9 @@
 $(document).ready(function() {
-  hideSections();
-  hideResumeSections();
-  hideProjectSections();
   showHome();
 
   $(".navItem").click(function(event) {
     event.preventDefault();
     showPanel(this);
-    hideResumeSections();
     if (this.id == "resume") {
       $("#technicalSkills-content").show();
     }
@@ -32,6 +28,9 @@ $(document).ready(function() {
 });
 
 function showHome() {
+  hideSections();
+  hideResumeLinks();
+  hideProjectSections();
   $("#about-content").show();
 }
 
@@ -45,16 +44,25 @@ function hideSections() {
 function showPanel(section){
   var panel = $(section).attr('id');
   hideSections();
+  hideResumeLinks();
   hideProjectSections();
   $("#" + panel + "-content").show();
 }
 
-function hideResumeSections() {
+function hideResumeLinks() {
   var items = document.querySelectorAll(".resumeItem");
   for (var i = 0; i < items.length; i++) {
     $("#" + items[i].id + "-content").hide();
   }
 }
+
+function hideResumeSections() {
+  var items = document.querySelectorAll(".resumeSection");
+  for (var i = 0; i < items.length; i++) {
+    $("#" + items[i].id + "-content").hide();
+  }
+}
+
 function showResumeSection(section) {
   hideResumeSections();
   $("#" + section.id + "-content").show();
@@ -68,7 +76,5 @@ function hideProjectSections() {
 }
 
 function showProjectSections(section) {
-  hideSections();
-  hideProjectSections();
-  $("#" + section.id + "-content").show();
+  showPanel(section);
 }

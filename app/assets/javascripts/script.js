@@ -77,6 +77,6 @@ function hideProjectSections() {
 }
 
 function showProjectSections(section) {
-  hideProjectSections():
+  hideProjectSections();
   $("#" + section.id + "-content").show();
 }

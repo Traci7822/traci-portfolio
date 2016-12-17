@@ -25,10 +25,10 @@ $(document).ready(function() {
     console.log(10);
     //all content showing
     // event.preventDefault();
-    // hideSections();
-    // hideResumeLinks();
-    // hideProjectSections();
-    // showProjectSections(this);
+    hideSections();
+    hideResumeLinks();
+    hideProjectSections();
+    showProjectSections(this);
     // $("#" + section.id + "-content").show();
 
   });

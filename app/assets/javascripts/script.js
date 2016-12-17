@@ -77,8 +77,6 @@ function hideProjectSections() {
 }
 
 function showProjectSections(section) {
-  hideSections();
-  hideResumeLinks();
-  hideProjectSections();
+  hideProjectSections():
   $("#" + section.id + "-content").show();
 }

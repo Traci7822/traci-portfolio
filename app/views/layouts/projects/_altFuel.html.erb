@@ -14,8 +14,8 @@
   <h3><a href="https://github.com/Traci7822/alternative_fuel_stations" target="_blank">https://github.com/Traci7822/alternative_fuel_stations</a></h3>
 
   <div class="slideshowButtons">
-    <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
-    <a class="w3-btn-floating w3-display-right" onclick="plusDivs(+1)">&#10095;</a>
+    <a class="w3-btn-floating w3-display-left" onclick="plusFuelDivs(-1)">&#10094;</a>
+    <a class="w3-btn-floating w3-display-right" onclick="plusFuelDivs(+1)">&#10095;</a>
   </div>
 
 
@@ -25,18 +25,18 @@
 </div>
 
 <script>
-  var slideIndex = 1;
-  showDivs(slideIndex);
+  var fuelSlideIndex = 1;
+  showFuelDivs(fuelSlideIndex);
 
-  function plusDivs(n) {
-    showDivs(slideIndex += n);
+  function plusFuelDivs(n) {
+    showFuelDivs(fuelSlideIndex += n);
   }
 
-  function showDivs(n) {
+  function showFuelDivs(n) {
     var i;
     var x = document.getElementsByClassName('altFuelPic');
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
+    if (n > x.length) {fuelSlideIndex = 1}
+    if (n < 1) {fuelSlideIndex = x.length}
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "none";
     }

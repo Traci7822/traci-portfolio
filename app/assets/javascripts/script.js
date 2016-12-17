@@ -27,7 +27,9 @@ $(document).ready(function() {
     hideSections();
     hideResumeLinks();
     hideProjectSections();
-    showProjectSections(this);
+    // showProjectSections(this);
+    $("#" + section.id + "-content").show();
+
   });
 });
 

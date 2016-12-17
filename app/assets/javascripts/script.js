@@ -21,17 +21,11 @@ $(document).ready(function() {
     $("#contact-content").show();
   });
 
-  // $(".project").click(function(event) {
-  //   console.log(10);
-  //   //all content showing
-  //   // event.preventDefault();
-  //   hideSections();
-  //   hideResumeLinks();
-  //   hideProjectSections();
-  //   showProjectSections(this);
-  //   // $("#" + section.id + "-content").show();
-  //
-  // });
+  $(".projectItem").click(function(event) {
+    event.preventDefault();
+    showProjectSections(this);
+  });
+
 });
 
 function showHome() {
@@ -83,6 +77,5 @@ function hideProjectSections() {
 }
 
 function showProjectSections(section) {
-  hideProjectSections();
-  $("#" + section.id + "-content").show();
+  showPanel(section);
 }

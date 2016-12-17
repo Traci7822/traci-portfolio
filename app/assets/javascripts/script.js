@@ -21,7 +21,7 @@ $(document).ready(function() {
     $("#contact-content").show();
   });
 
-  $(".project").click(function(event) {
+  $(".projectItem").click(function(event) {
     //all content showing
     // event.preventDefault();
     // hideSections();

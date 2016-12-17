@@ -23,7 +23,7 @@ $(document).ready(function() {
 
   $(".projectItem").click(function(event) {
     //all content showing
-    event.preventDefault();
+    // event.preventDefault();
     showProjectSections(this);
   });
 });

@@ -22,6 +22,7 @@ $(document).ready(function() {
   });
 
   $(".projectItem").click(function(event) {
+    console.log(10);
     //all content showing
     // event.preventDefault();
     // hideSections();

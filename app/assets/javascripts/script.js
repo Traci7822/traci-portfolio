@@ -22,6 +22,7 @@ $(document).ready(function() {
   });
 
   $(".project").click(function(event) {
+    debugger;
     //all content showing
     event.preventDefault();
     hideSections();

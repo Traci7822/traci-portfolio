@@ -5,6 +5,7 @@ $(document).ready(function() {
     event.preventDefault();
     showPanel(this);
     if (this.id == "resume") {
+      //not showing
       $("#technicalSkills-content").show();
     }
   });
@@ -21,10 +22,10 @@ $(document).ready(function() {
   });
 
   $(".projectItem").click(function(event) {
+    //all content showing
     event.preventDefault();
     showProjectSections(this);
   });
-
 });
 
 function showHome() {
@@ -76,5 +77,6 @@ function hideProjectSections() {
 }
 
 function showProjectSections(section) {
-  showPanel(section);
+  hideSections();
+  $("#" + section.id + "-content").show();
 }

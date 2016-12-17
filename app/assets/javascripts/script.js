@@ -1,4 +1,7 @@
 $(document).ready(function() {
+  hideSections();
+  hideResumeLinks();
+  hideProjectSections();
   showHome();
 
   $(".navItem").click(function(event) {
@@ -29,9 +32,7 @@ $(document).ready(function() {
 });
 
 function showHome() {
-  hideSections();
-  hideResumeLinks();
-  hideProjectSections();
+
   $("#about-content").show();
 }
 

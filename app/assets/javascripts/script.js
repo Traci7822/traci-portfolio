@@ -6,8 +6,7 @@ $(document).ready(function() {
   $(".navItem").click(function(event) {
     event.preventDefault();
     showPanel(this);
-    if (this.attr('id') === "resume") {
-      alert("boogers");
+    if (this.id == "resume") {
     //not showing on hosted version
       hideResumeSections();
       $("#technicalSkills-content").show();

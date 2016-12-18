@@ -1,58 +1,52 @@
 $(document).ready(function() {
-  showHome();
+  hideAllSections();
+  $("#about-content").show();
+
 
   $(".navItem").click(function(event) {
     event.preventDefault();
     showPanel(this);
     if (this.id == "resume") {
-      //not showing
+    //   //not showing on real version
+      hideResumeSections();
       $("#technicalSkills-content").show();
     }
   });
 
   $(".resumeItem").click(function(event) {
     event.preventDefault();
-    showResumeSection(this);
-  });
-
+    hideResumeSections();
+    $("#" + this.id + "-content").show();
+  })
+//
+//   $(".resumeItem").click(function(event) {
+//     event.preventDefault();
+//     showResumeSection(this);
+//   });
+//
   $(".contactButton").click(function(event) {
     event.preventDefault();
-    hideSections();
-    $("#contact-content").show();
+    showPanel(this);
   });
-
-  $(".projectItem").click(function(event) {
-    event.preventDefault();
-    showProjectSections(this);
-  });
-
+//
+//   $(".projectItem").click(function(event) {
+//     event.preventDefault();
+//     showProjectSections(this);
+//   });
+//
 });
 
-function showHome() {
-
-  $("#about-content").show();
-}
-
-function hideSections() {
-  var items = document.querySelectorAll(".navItem");
-  for (var i = 0; i < items.length; i++) {
-    $("#" + items[i].id + "-content").hide();
-  }
+function hideAllSections() {
+  $("#projects-content").hide();
+  $("#resume-content").hide();
+  $("#blog-content").hide();
+  $("#contact-content").hide();
+  $("#about-content").hide();
 }
 
 function showPanel(section){
-  var panel = $(section).attr('id');
-  hideSections();
-  hideResumeLinks();
-  hideProjectSections();
-  $("#" + panel + "-content").show();
-}
-
-function hideResumeLinks() {
-  var items = document.querySelectorAll(".resumeItem");
-  for (var i = 0; i < items.length; i++) {
-    $("#" + items[i].id + "-content").hide();
-  }
+  hideAllSections();
+   $("#" + section.id + "-content").show();
 }
 
 function hideResumeSections() {
@@ -61,19 +55,41 @@ function hideResumeSections() {
     $("#" + items[i].id + "-content").hide();
   }
 }
+//
 
-function showResumeSection(section) {
-  hideResumeSections();
-  $("#" + section.id + "-content").show();
-}
+//
+// function hideSections() {
+//   var items = document.getElementsByClassName(".section");
+//   for (var i = 0; i < items.length; i++) {
+//     debugger;
+//
+//     $("#" + items[i].id + "-content").hide();
+//   }
+// }
+//
 
-function hideProjectSections() {
-  var items = document.querySelectorAll(".project");
-  for (var i = 0; i < items.length; i++) {
-    $("#" + items[i].id + "-content").hide();
-  }
-}
+//
+// function hideResumeLinks() {
+//   var items = document.querySelectorAll(".resumeItem");
+//   for (var i = 0; i < items.length; i++) {
+//     $("#" + items[i].id + "-content").hide();
+//   }
+// }
+//
 
-function showProjectSections(section) {
-  showPanel(section);
-}
+//
+// function showResumeSection(section) {
+//   hideResumeSections();
+//   $("#" + section.id + "-content").show();
+// }
+//
+// function hideProjectSections() {
+//   var items = document.querySelectorAll(".project");
+//   for (var i = 0; i < items.length; i++) {
+//     $("#" + items[i].id + "-content").hide();
+//   }
+// }
+//
+// function showProjectSections(section) {
+//   showPanel(section);
+// }

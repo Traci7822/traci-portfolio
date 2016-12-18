@@ -6,12 +6,17 @@ $(document).ready(function() {
   $(".navItem").click(function(event) {
     event.preventDefault();
     showPanel(this);
-    if (this.id == "resume") {
-    //   //not showing on real version
-      hideResumeSections();
-      $("#technicalSkills-content.resumeSection").show();
-    }
+    // if (this.id == "resume") {
+    // //   //not showing on real version
+    //   // hideResumeSections();
+    //   // $("#technicalSkills-content.resumeSection").show();
+    // }
   });
+
+  $("#resume").click(function(event) {
+    hideResumeSections();
+    $("#technicalSkills-content.resumeSection").show();
+  })
 
   $(".resumeItem").click(function(event) {
     event.preventDefault();

@@ -326,11 +326,7 @@
       "from": "cliui@>=2.1.0 <3.0.0",
       "resolved": "https://registry.npmjs.org/cliui/-/cliui-2.1.0.tgz"
     },
-    "coffee-script": {
-      "version": "1.10.0",
-      "from": "coffee-script@>=1.10.0 <1.11.0",
-      "resolved": "https://registry.npmjs.org/coffee-script/-/coffee-script-1.10.0.tgz"
-    },
+
     "colors": {
       "version": "1.1.2",
       "from": "colors@>=1.1.2 <1.2.0",

@@ -7,6 +7,7 @@ $(document).ready(function() {
     event.preventDefault();
     showPanel(this);
     if (this.attr('id') === "resume") {
+      alert("boogers");
     //not showing on hosted version
       hideResumeSections();
       $("#technicalSkills-content").show();

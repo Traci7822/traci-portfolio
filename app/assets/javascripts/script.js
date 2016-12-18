@@ -9,8 +9,7 @@ $(document).ready(function() {
     if (this.id == "resume") {
     //   //not showing on real version
       hideResumeSections();
-      event.preventDefault();
-      $("#technicalSkills-content").show();
+      $("#technicalSkills-content.resumeSection").show();
     }
   });
 

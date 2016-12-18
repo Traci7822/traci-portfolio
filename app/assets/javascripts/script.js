@@ -6,23 +6,18 @@ $(document).ready(function() {
   $(".navItem").click(function(event) {
     event.preventDefault();
     showPanel(this);
-    // if (this.id == "resume") {
-    // //   //not showing on real version
-    //   // hideResumeSections();
-    //   // $("#technicalSkills-content.resumeSection").show();
-    // }
+    if (this.attr('id') === "resume") {
+    //not showing on hosted version
+      hideResumeSections();
+      $("#technicalSkills-content").show();
+    }
   });
-
-  $("#resume").click(function(event) {
-    hideResumeSections();
-    $("#technicalSkills-content.resumeSection").show();
-  })
 
   $(".resumeItem").click(function(event) {
     event.preventDefault();
     hideResumeSections();
     $("#" + this.id + "-content").show();
-  })
+  });
 //
 //   $(".resumeItem").click(function(event) {
 //     event.preventDefault();

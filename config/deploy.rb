@@ -3,7 +3,7 @@ server '138.197.223.153', port: 22, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:Traci7822/portfolio.git'
 set :application,     'portfolio'
-set :user,            'deploy'
+set :user,            'traci'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
 

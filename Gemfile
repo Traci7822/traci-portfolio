@@ -29,6 +29,7 @@ gem 'bootstrap-sass'
 gem 'pry'
 # Use Unicorn as the app server
 gem 'rails_12factor', group: :production
+gem 'therubyracer'
 
 group :production do
  gem 'unicorn'

@@ -29,9 +29,9 @@ gem 'bootstrap-sass'
 gem 'pry'
 # Use Unicorn as the app server
 gem 'rails_12factor', group: :production
-gem 'capistrano', '~> 3.1.0'
-gem 'capistrano-bundler', '~> 1.1.2'
-gem 'capistrano-rails', '~> 1.1.1'
+gem 'capistrano', '~> 3.5.0'
+gem 'capistrano-bundler', '~> 1.1.3'
+gem 'capistrano-rails', '~> 1.1.7'
 
 gem 'capistrano-rbenv', github: "capistrano/rbenv"
 

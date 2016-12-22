@@ -48,16 +48,17 @@
 .projectItemPic {
   margin-left: auto;
   margin-right: auto;
-  max-width: 30%;
+  // max-width: 30%;
   width: auto;
   border: 3px solid #24396E;
   margin-top: 30px;
   margin-bottom: 20px;
   max-height: 500px;
-  height: auto;
+  // height: auto;
 }
 
 .slideshowButtons {
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -67,4 +68,19 @@
 
 .slideshowButtons:hover {
   cursor: pointer;
+}
+
+.projectImages {
+
+  height: 500px;
+}
+
+#trail-screenshot1 #trail-screenshot2 {
+  height: 100%;
+}
+
+#trail-screenshot3 #trail-screenshot4 {
+  height: 100%;
+  top: 50%;
+  bottom: 50%;
 }

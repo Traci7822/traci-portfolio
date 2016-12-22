@@ -29,10 +29,10 @@ $(document).ready(function() {
     showPanel(this);
   });
 //
-//   $(".projectItem").click(function(event) {
-//     event.preventDefault();
-//     showProjectSections(this);
-//   });
+  $(".projectItem").click(function(event) {
+    event.preventDefault();
+    showProjectSections(this);
+  });
 //
 });
 
@@ -42,6 +42,7 @@ function hideAllSections() {
   $("#blog-content").hide();
   $("#contact-content").hide();
   $("#about-content").hide();
+  hideProjectSections();
 }
 
 function showPanel(section){
@@ -51,6 +52,18 @@ function showPanel(section){
 
 function hideResumeSections() {
   var items = document.querySelectorAll(".resumeSection");
+  for (var i = 0; i < items.length; i++) {
+    $("#" + items[i].id + "-content").hide();
+  }
+}
+
+function showProjectSections(section) {
+  hideAllSections();
+  $("#" + section.id + "-content").show();
+}
+
+function hideProjectSections() {
+  var items = document.querySelectorAll(".project");
   for (var i = 0; i < items.length; i++) {
     $("#" + items[i].id + "-content").hide();
   }
@@ -83,13 +96,5 @@ function hideResumeSections() {
 //   $("#" + section.id + "-content").show();
 // }
 //
-// function hideProjectSections() {
-//   var items = document.querySelectorAll(".project");
-//   for (var i = 0; i < items.length; i++) {
-//     $("#" + items[i].id + "-content").hide();
-//   }
-// }
+
 //
-// function showProjectSections(section) {
-//   showPanel(section);
-// }

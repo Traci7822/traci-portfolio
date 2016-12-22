@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'chicken';
+  src: font-url('chicken.ttf')
+}
+
+@font-face {
+  font-family: 'eurof35';
+  src: font-url('eurof35.ttf')
+}
+
+body {
+  background-color: #9cc9de;
+}
+.header {
+  font-family: 'chicken';
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.header img {
+  width: 200px;
+  // border: solid 1px black;
+  box-shadow: 0px 2px 7px #365CAB;
+  border-radius: 100px;
+
+}
+
+.header h1 {
+  font-size: 8.5em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  letter-spacing: 4px;
+  line-height: .9;
+  text-align: left;
+  color: #24396E;
+  text-shadow: .5px .5px black;
+
+}
+
+.header h3 {
+  text-align: left;
+  padding-top: 0;
+  margin-top: 0;
+  font-size: 3em;
+  font-family: 'eurof35';
+  color: black;
+  text-shadow: .5px .5px #365CAB;
+}
+
+.lastName {
+  color: black;
+  text-shadow: .5px .5px #365CAB;
+}

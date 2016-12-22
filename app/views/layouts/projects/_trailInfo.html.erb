@@ -1,0 +1,43 @@
+<div class="projectDisplay">
+  <h1>Trail Info CLI Gem</h1>
+  <div class="projectDescription">
+    <h3>TrailInfo is a CLI gem programmed to allow the user to select a state and then display available trails in that state from TrailLink.com. Users are then able to select a trail from that list to see further details about the trail.</h3>
+  </div>
+
+  <div class="projectImages">
+    <%= image_tag("trailinfo1.png", :alt => "trailinfo1", :class => "trailInfoPic project projectItemPic", :id => "trailinfo1") %>
+    <%= image_tag("trailinfo2.png", :alt => "trailinfo2", :class => "trailInfoPic project projectItemPic", :id => "trailinfo2") %>
+    <%= image_tag("trailinfo3.png", :alt => "trailinfo3", :class => "trailInfoPic project projectItemPic", :id => "trailinfo3") %>
+  </div>
+  <h3><a href="https://github.com/Traci7822/trail-info-cli-gem" target="_blank">https://github.com/Traci7822/trail-info-cli-gem</a></h3>
+
+  <div class="slideshowButtons">
+    <a class="w3-btn-floating w3-display-left" onclick="plusTrailDivs(-1)">&#10094;</a>
+    <a class="w3-btn-floating w3-display-right" onclick="plusTrailDivs(+1)">&#10095;</a>
+  </div>
+
+  <div class="projectReturn">
+    <a href="#" class="navItem" id="projects">Return to Projects</a>
+  </div>
+</div>
+
+
+<script>
+  var trailSlideIndex = 1;
+  showTrailDivs(trailSlideIndex);
+
+  function plusTrailDivs(n) {
+    showTrailDivs(trailSlideIndex += n);
+  }
+
+  function showTrailDivs(n) {
+    var i;
+    var x = document.getElementsByClassName('trailInfoPic');
+    if (n > x.length) {trailSlideIndex = 1}
+    if (n < 1) {trailSlideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[trailSlideIndex-1].style.display = "block";
+  }
+</script>

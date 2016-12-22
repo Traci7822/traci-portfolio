@@ -1,0 +1,26 @@
+.section {
+  box-shadow: 0px -1px 8px #24396E;
+  // margin-top: 80px;
+  background-color: #9cc9de;
+  min-height: 650px;
+  height: auto;
+  font-family: 'eurof35', sans-serif;
+  letter-spacing: 1px;
+}
+
+.introtext {
+  font-size: 5em;
+  text-align: center;
+}
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2em;
+}
+
+#itemCircle {
+  height: 12px;
+  width: 12px;
+  margin-bottom: 5px;
+}

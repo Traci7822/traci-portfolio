@@ -1,0 +1,70 @@
+.projectSection .projectItem {
+  margin-left: auto;
+  margin-right: auto;
+  // width: 10%;
+  font-size: 1.5em;
+  color: #24396E;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#this-project {
+  margin-top: 100px;
+}
+
+.glyphicon .glyphicon-check {
+  font-size: 20px;
+}
+
+.projectDisplay {
+  padding-top: 50px;
+  text-align: center;
+
+  h1 {
+    font-size: 4em;
+  }
+  .projectDescription {
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    text-align: center;
+  }
+  .projectReturn {
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    font-size: 1.5em;
+    background-color: lighten(#9cc9de, 10%);
+    color: #24396E;
+    padding: 8px;
+    margin-top: 30px;
+    border: 1px solid #24396E;
+    box-shadow: 0px 0px 4px #24396E;
+    border-radius: 5px;
+  }
+  padding-bottom: 50px;
+}
+
+.projectItemPic {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 30%;
+  width: auto;
+  border: 3px solid #24396E;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  max-height: 500px;
+  height: auto;
+}
+
+.slideshowButtons {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 3em;
+  letter-spacing: 15px;
+}
+
+.slideshowButtons:hover {
+  cursor: pointer;
+}

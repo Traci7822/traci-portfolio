@@ -42,7 +42,10 @@ function hideAllSections() {
   $("#blog-content").hide();
   $("#contact-content").hide();
   $("#about-content").hide();
+  $("#trailInfo-content").hide();
+  $("#altFuel-content").hide();
 }
+
 
 function showPanel(section){
   hideAllSections();
@@ -90,6 +93,7 @@ function hideResumeSections() {
 //   }
 // }
 //
-// function showProjectSections(section) {
-//   showPanel(section);
-// }
+function showProjectSections(section) {
+  hideAllSections();
+  $("#" + section.id + "-content").show();
+}

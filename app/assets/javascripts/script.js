@@ -42,7 +42,8 @@ function hideAllSections() {
   $("#blog-content").hide();
   $("#contact-content").hide();
   $("#about-content").hide();
-  hideProjectSections();
+  $("#trailInfo-content").hide();
+  $("#altFuel-content").hide();
 }
 
 function showPanel(section){

@@ -29,10 +29,10 @@ $(document).ready(function() {
     showPanel(this);
   });
 //
-//   $(".projectItem").click(function(event) {
-//     event.preventDefault();
-//     showProjectSections(this);
-//   });
+  $(".projectItem").click(function(event) {
+    event.preventDefault();
+    showProjectSections(this);
+  });
 //
 });
 

@@ -44,6 +44,7 @@ function hideAllSections() {
   $("#about-content").hide();
   $("#trailInfo-content").hide();
   $("#altFuel-content").hide();
+  $("#yogaFlow-content").hide();
 }
 
 

@@ -63,7 +63,7 @@ function hideResumeSections() {
 }
 
 function hideProjectSections() {
-  var items = document.querySelectorAll(".project");
+  var items = document.querySelectorAll(".projectDisplay");
   for (var i = 0; i < items.length; i++) {
     $("#" + items[i].id + "-content").hide();
   }

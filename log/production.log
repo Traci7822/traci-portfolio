@@ -1,0 +1,914 @@
+D, [2016-12-11T21:10:02.862837 #15209] DEBUG -- :   [1m[36m (11.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+D, [2016-12-11T21:10:02.878538 #15209] DEBUG -- :   [1m[35m (11.1ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+I, [2016-12-11T21:11:38.470907 #15261]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-11 21:11:38 -0500
+I, [2016-12-11T21:11:38.506452 #15261]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-11T21:11:38.523065 #15261]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.6ms)
+I, [2016-12-11T21:11:38.528225 #15261]  INFO -- :   Rendered layouts/_nav.html.erb (0.4ms)
+I, [2016-12-11T21:11:38.530010 #15261]  INFO -- :   Rendered layouts/_showcase.html.erb (0.7ms)
+I, [2016-12-11T21:11:38.530237 #15261]  INFO -- :   Rendered layouts/_header.html.erb (4.3ms)
+I, [2016-12-11T21:11:38.530898 #15261]  INFO -- : Completed 200 OK in 24ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+I, [2016-12-11T21:11:38.612260 #15253]  INFO -- : Started GET "/assets/application-2d8621ea3d86645555b029781b956ae89f825bbaa83a4d0bab049acb30c6606a.css" for 73.153.4.249 at 2016-12-11 21:11:38 -0500
+F, [2016-12-11T21:11:38.639956 #15253] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-2d8621ea3d86645555b029781b956ae89f825bbaa83a4d0bab049acb30c6606a.css"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:562:in `process_client'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:132:in `start'
+  unicorn (5.2.0) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `<main>'
+
+
+I, [2016-12-11T21:11:38.678717 #15261]  INFO -- : Started GET "/assets/application-aabb1fd4392500edb433d3ba920d2a330927881d474fd24214ac97fe48586a0b.js" for 73.153.4.249 at 2016-12-11 21:11:38 -0500
+F, [2016-12-11T21:11:38.680903 #15261] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-aabb1fd4392500edb433d3ba920d2a330927881d474fd24214ac97fe48586a0b.js"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:562:in `process_client'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:132:in `start'
+  unicorn (5.2.0) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `<main>'
+
+
+I, [2016-12-11T21:11:38.708896 #15258]  INFO -- : Started GET "/assets/headshot-5b9d155eefeb65c0d967590cc0df71666635732b0468b19ebcd61213c24abc4e.jpg" for 73.153.4.249 at 2016-12-11 21:11:38 -0500
+F, [2016-12-11T21:11:38.742295 #15258] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/headshot-5b9d155eefeb65c0d967590cc0df71666635732b0468b19ebcd61213c24abc4e.jpg"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:562:in `process_client'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:132:in `start'
+  unicorn (5.2.0) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `<main>'
+
+
+I, [2016-12-11T21:11:40.767616 #15261]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-11 21:11:40 -0500
+I, [2016-12-11T21:11:40.769537 #15261]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-11T21:11:40.770805 #15261]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.0ms)
+I, [2016-12-11T21:11:40.772055 #15261]  INFO -- :   Rendered layouts/_nav.html.erb (0.0ms)
+I, [2016-12-11T21:11:40.772434 #15261]  INFO -- :   Rendered layouts/_showcase.html.erb (0.1ms)
+I, [2016-12-11T21:11:40.772533 #15261]  INFO -- :   Rendered layouts/_header.html.erb (0.6ms)
+I, [2016-12-11T21:11:40.772805 #15261]  INFO -- : Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+I, [2016-12-11T21:11:40.857242 #15253]  INFO -- : Started GET "/assets/application-2d8621ea3d86645555b029781b956ae89f825bbaa83a4d0bab049acb30c6606a.css" for 73.153.4.249 at 2016-12-11 21:11:40 -0500
+I, [2016-12-11T21:11:40.858466 #15258]  INFO -- : Started GET "/assets/application-aabb1fd4392500edb433d3ba920d2a330927881d474fd24214ac97fe48586a0b.js" for 73.153.4.249 at 2016-12-11 21:11:40 -0500
+F, [2016-12-11T21:11:40.860508 #15258] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-aabb1fd4392500edb433d3ba920d2a330927881d474fd24214ac97fe48586a0b.js"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:562:in `process_client'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:132:in `start'
+  unicorn (5.2.0) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `<main>'
+
+
+F, [2016-12-11T21:11:40.862392 #15253] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-2d8621ea3d86645555b029781b956ae89f825bbaa83a4d0bab049acb30c6606a.css"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:562:in `process_client'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:132:in `start'
+  unicorn (5.2.0) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `<main>'
+
+
+I, [2016-12-11T21:11:40.935616 #15256]  INFO -- : Started GET "/assets/headshot-5b9d155eefeb65c0d967590cc0df71666635732b0468b19ebcd61213c24abc4e.jpg" for 73.153.4.249 at 2016-12-11 21:11:40 -0500
+F, [2016-12-11T21:11:40.963959 #15256] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/headshot-5b9d155eefeb65c0d967590cc0df71666635732b0468b19ebcd61213c24abc4e.jpg"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:562:in `process_client'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:132:in `start'
+  unicorn (5.2.0) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `<main>'
+
+
+I, [2016-12-11T21:12:02.027432 #15258]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-11 21:12:02 -0500
+I, [2016-12-11T21:12:02.030747 #15258]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-11T21:12:02.047580 #15258]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.6ms)
+I, [2016-12-11T21:12:02.051879 #15258]  INFO -- :   Rendered layouts/_nav.html.erb (0.3ms)
+I, [2016-12-11T21:12:02.053212 #15258]  INFO -- :   Rendered layouts/_showcase.html.erb (0.3ms)
+I, [2016-12-11T21:12:02.053326 #15258]  INFO -- :   Rendered layouts/_header.html.erb (2.8ms)
+I, [2016-12-11T21:12:02.053748 #15258]  INFO -- : Completed 200 OK in 23ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+I, [2016-12-11T21:12:02.138202 #15253]  INFO -- : Started GET "/assets/application-2d8621ea3d86645555b029781b956ae89f825bbaa83a4d0bab049acb30c6606a.css" for 73.153.4.249 at 2016-12-11 21:12:02 -0500
+I, [2016-12-11T21:12:02.139717 #15256]  INFO -- : Started GET "/assets/application-aabb1fd4392500edb433d3ba920d2a330927881d474fd24214ac97fe48586a0b.js" for 73.153.4.249 at 2016-12-11 21:12:02 -0500
+F, [2016-12-11T21:12:02.141810 #15253] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-2d8621ea3d86645555b029781b956ae89f825bbaa83a4d0bab049acb30c6606a.css"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:562:in `process_client'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:132:in `start'
+  unicorn (5.2.0) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `<main>'
+
+
+F, [2016-12-11T21:12:02.143579 #15256] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-aabb1fd4392500edb433d3ba920d2a330927881d474fd24214ac97fe48586a0b.js"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:562:in `process_client'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:132:in `start'
+  unicorn (5.2.0) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `<main>'
+
+
+I, [2016-12-11T21:12:02.213017 #15261]  INFO -- : Started GET "/assets/headshot-5b9d155eefeb65c0d967590cc0df71666635732b0468b19ebcd61213c24abc4e.jpg" for 73.153.4.249 at 2016-12-11 21:12:02 -0500
+F, [2016-12-11T21:12:02.216237 #15261] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/headshot-5b9d155eefeb65c0d967590cc0df71666635732b0468b19ebcd61213c24abc4e.jpg"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:562:in `process_client'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:132:in `start'
+  unicorn (5.2.0) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `<main>'
+
+
+I, [2016-12-11T21:13:09.828867 #15253]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-11 21:13:09 -0500
+I, [2016-12-11T21:13:09.838542 #15253]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-11T21:13:09.888377 #15253]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (1.1ms)
+I, [2016-12-11T21:13:09.892612 #15253]  INFO -- :   Rendered layouts/_nav.html.erb (0.4ms)
+I, [2016-12-11T21:13:09.893849 #15253]  INFO -- :   Rendered layouts/_showcase.html.erb (0.4ms)
+I, [2016-12-11T21:13:09.893949 #15253]  INFO -- :   Rendered layouts/_header.html.erb (2.6ms)
+I, [2016-12-11T21:13:09.894569 #15253]  INFO -- : Completed 200 OK in 56ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+I, [2016-12-11T21:14:09.044603 #15258]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-11 21:14:09 -0500
+I, [2016-12-11T21:14:09.048971 #15258]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-11T21:14:09.050871 #15258]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.1ms)
+I, [2016-12-11T21:14:09.052234 #15258]  INFO -- :   Rendered layouts/_nav.html.erb (0.0ms)
+I, [2016-12-11T21:14:09.052564 #15258]  INFO -- :   Rendered layouts/_showcase.html.erb (0.1ms)
+I, [2016-12-11T21:14:09.052669 #15258]  INFO -- :   Rendered layouts/_header.html.erb (0.6ms)
+I, [2016-12-11T21:14:09.052920 #15258]  INFO -- : Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+I, [2016-12-11T21:15:14.303764 #15261]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-11 21:15:14 -0500
+I, [2016-12-11T21:15:14.307126 #15261]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-11T21:15:14.308552 #15261]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.2ms)
+I, [2016-12-11T21:15:14.310360 #15261]  INFO -- :   Rendered layouts/_nav.html.erb (0.0ms)
+I, [2016-12-11T21:15:14.310748 #15261]  INFO -- :   Rendered layouts/_showcase.html.erb (0.1ms)
+I, [2016-12-11T21:15:14.310846 #15261]  INFO -- :   Rendered layouts/_header.html.erb (0.7ms)
+I, [2016-12-11T21:15:14.311156 #15261]  INFO -- : Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+I, [2016-12-11T21:15:24.832809 #15253]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-11 21:15:24 -0500
+I, [2016-12-11T21:15:24.845812 #15253]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-11T21:15:24.850911 #15253]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.2ms)
+I, [2016-12-11T21:15:24.854743 #15253]  INFO -- :   Rendered layouts/_nav.html.erb (0.2ms)
+I, [2016-12-11T21:15:24.855366 #15253]  INFO -- :   Rendered layouts/_showcase.html.erb (0.1ms)
+I, [2016-12-11T21:15:24.855541 #15253]  INFO -- :   Rendered layouts/_header.html.erb (1.2ms)
+I, [2016-12-11T21:15:24.856301 #15253]  INFO -- : Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+I, [2016-12-11T21:15:24.983349 #15261]  INFO -- : Started GET "/apple-touch-icon-precomposed.png" for 73.153.4.249 at 2016-12-11 21:15:24 -0500
+F, [2016-12-11T21:15:24.985998 #15261] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:562:in `process_client'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:132:in `start'
+  unicorn (5.2.0) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `<main>'
+
+
+I, [2016-12-11T21:15:25.065545 #15258]  INFO -- : Started GET "/apple-touch-icon.png" for 73.153.4.249 at 2016-12-11 21:15:25 -0500
+F, [2016-12-11T21:15:25.068594 #15258] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:562:in `process_client'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:132:in `start'
+  unicorn (5.2.0) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `<main>'
+
+
+I, [2016-12-11T21:16:42.257971 #15253]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-11 21:16:42 -0500
+I, [2016-12-11T21:16:42.260110 #15253]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-11T21:16:42.261733 #15253]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.0ms)
+I, [2016-12-11T21:16:42.262885 #15253]  INFO -- :   Rendered layouts/_nav.html.erb (0.0ms)
+I, [2016-12-11T21:16:42.263291 #15253]  INFO -- :   Rendered layouts/_showcase.html.erb (0.1ms)
+I, [2016-12-11T21:16:42.263418 #15253]  INFO -- :   Rendered layouts/_header.html.erb (0.7ms)
+I, [2016-12-11T21:16:42.263647 #15253]  INFO -- : Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+I, [2016-12-11T21:16:59.860648 #15256]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-11 21:16:59 -0500
+I, [2016-12-11T21:16:59.870688 #15256]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-11T21:16:59.905532 #15256]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (1.2ms)
+I, [2016-12-11T21:16:59.911072 #15256]  INFO -- :   Rendered layouts/_nav.html.erb (0.4ms)
+I, [2016-12-11T21:16:59.912364 #15256]  INFO -- :   Rendered layouts/_showcase.html.erb (0.4ms)
+I, [2016-12-11T21:16:59.912562 #15256]  INFO -- :   Rendered layouts/_header.html.erb (3.3ms)
+I, [2016-12-11T21:16:59.913112 #15256]  INFO -- : Completed 200 OK in 42ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+I, [2016-12-11T21:17:33.988475 #15253]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-11 21:17:33 -0500
+I, [2016-12-11T21:17:33.991803 #15253]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-11T21:17:33.994059 #15253]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.2ms)
+I, [2016-12-11T21:17:33.996640 #15253]  INFO -- :   Rendered layouts/_nav.html.erb (0.0ms)
+I, [2016-12-11T21:17:33.997092 #15253]  INFO -- :   Rendered layouts/_showcase.html.erb (0.1ms)
+I, [2016-12-11T21:17:33.997216 #15253]  INFO -- :   Rendered layouts/_header.html.erb (0.7ms)
+I, [2016-12-11T21:17:33.997542 #15253]  INFO -- : Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+I, [2016-12-11T21:23:06.337685 #1006]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-11 21:23:06 -0500
+I, [2016-12-11T21:23:06.414880 #1006]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-11T21:23:06.429653 #1006]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.5ms)
+I, [2016-12-11T21:23:06.434335 #1006]  INFO -- :   Rendered layouts/_nav.html.erb (0.3ms)
+I, [2016-12-11T21:23:06.435805 #1006]  INFO -- :   Rendered layouts/_showcase.html.erb (0.4ms)
+I, [2016-12-11T21:23:06.435897 #1006]  INFO -- :   Rendered layouts/_header.html.erb (3.4ms)
+I, [2016-12-11T21:23:06.436254 #1006]  INFO -- : Completed 200 OK in 21ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+I, [2016-12-12T01:06:53.723117 #1003]  INFO -- : Started GET "/" for 52.91.120.47 at 2016-12-12 01:06:53 -0500
+I, [2016-12-12T01:06:53.798229 #1003]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-12T01:06:53.843972 #1003]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (1.5ms)
+I, [2016-12-12T01:06:53.850234 #1003]  INFO -- :   Rendered layouts/_nav.html.erb (0.4ms)
+I, [2016-12-12T01:06:53.851830 #1003]  INFO -- :   Rendered layouts/_showcase.html.erb (0.5ms)
+I, [2016-12-12T01:06:53.851941 #1003]  INFO -- :   Rendered layouts/_header.html.erb (3.4ms)
+I, [2016-12-12T01:06:53.852549 #1003]  INFO -- : Completed 200 OK in 54ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+I, [2016-12-12T03:36:22.477012 #998]  INFO -- : Started GET "/" for 54.174.16.99 at 2016-12-12 03:36:22 -0500
+I, [2016-12-12T03:36:22.544163 #998]  INFO -- : Processing by ApplicationController#index as */*
+I, [2016-12-12T03:36:22.603241 #998]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.9ms)
+I, [2016-12-12T03:36:22.614486 #998]  INFO -- :   Rendered layouts/_nav.html.erb (0.4ms)
+I, [2016-12-12T03:36:22.619052 #998]  INFO -- :   Rendered layouts/_showcase.html.erb (0.6ms)
+I, [2016-12-12T03:36:22.619210 #998]  INFO -- :   Rendered layouts/_header.html.erb (9.2ms)
+I, [2016-12-12T03:36:22.619932 #998]  INFO -- : Completed 200 OK in 75ms (Views: 58.7ms | ActiveRecord: 0.0ms)
+I, [2016-12-12T04:09:59.140141 #1006]  INFO -- : Started GET "/" for 93.174.93.218 at 2016-12-12 04:09:59 -0500
+I, [2016-12-12T04:09:59.154840 #1006]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-12T04:09:59.160661 #1006]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.4ms)
+I, [2016-12-12T04:09:59.164419 #1006]  INFO -- :   Rendered layouts/_nav.html.erb (0.0ms)
+I, [2016-12-12T04:09:59.165068 #1006]  INFO -- :   Rendered layouts/_showcase.html.erb (0.1ms)
+I, [2016-12-12T04:09:59.165178 #1006]  INFO -- :   Rendered layouts/_header.html.erb (1.0ms)
+I, [2016-12-12T04:09:59.165877 #1006]  INFO -- : Completed 200 OK in 11ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+I, [2016-12-12T07:07:03.698120 #1003]  INFO -- : Started GET "/?author=1" for 188.165.28.233 at 2016-12-12 07:07:03 -0500
+I, [2016-12-12T07:07:03.736072 #1003]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-12T07:07:03.736270 #1003]  INFO -- :   Parameters: {"author"=>"1"}
+I, [2016-12-12T07:07:03.740228 #1003]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.2ms)
+I, [2016-12-12T07:07:03.742969 #1003]  INFO -- :   Rendered layouts/_nav.html.erb (0.1ms)
+I, [2016-12-12T07:07:03.743504 #1003]  INFO -- :   Rendered layouts/_showcase.html.erb (0.1ms)
+I, [2016-12-12T07:07:03.743645 #1003]  INFO -- :   Rendered layouts/_header.html.erb (1.0ms)
+I, [2016-12-12T07:07:03.744111 #1003]  INFO -- : Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+I, [2016-12-12T07:43:44.820955 #1006]  INFO -- : Started GET "/" for 207.46.13.112 at 2016-12-12 07:43:44 -0500
+I, [2016-12-12T07:43:44.835819 #1006]  INFO -- : Processing by ApplicationController#index as */*
+I, [2016-12-12T07:43:44.852637 #1006]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (6.3ms)
+I, [2016-12-12T07:43:44.864864 #1006]  INFO -- :   Rendered layouts/_nav.html.erb (0.5ms)
+I, [2016-12-12T07:43:44.868972 #1006]  INFO -- :   Rendered layouts/_showcase.html.erb (0.5ms)
+I, [2016-12-12T07:43:44.869099 #1006]  INFO -- :   Rendered layouts/_header.html.erb (9.5ms)
+I, [2016-12-12T07:43:44.869631 #1006]  INFO -- : Completed 200 OK in 34ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+I, [2016-12-12T12:03:59.763288 #1006]  INFO -- : Started POST "/azenv.php?auth=148156223943&a=PSCMN&i=2328177403&p=80" for 95.213.177.126 at 2016-12-12 12:03:59 -0500
+F, [2016-12-12T12:03:59.770357 #1006] FATAL -- : 
+ActionController::RoutingError (No route matches [POST] "/azenv.php"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:562:in `process_client'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:132:in `start'
+  unicorn (5.2.0) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `<main>'
+
+
+I, [2016-12-12T14:34:37.476388 #1006]  INFO -- : Started GET "/" for 157.55.39.164 at 2016-12-12 14:34:37 -0500
+I, [2016-12-12T14:34:37.483302 #1006]  INFO -- : Processing by ApplicationController#index as */*
+I, [2016-12-12T14:34:37.489593 #1006]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.4ms)
+I, [2016-12-12T14:34:37.494782 #1006]  INFO -- :   Rendered layouts/_nav.html.erb (0.2ms)
+I, [2016-12-12T14:34:37.495510 #1006]  INFO -- :   Rendered layouts/_showcase.html.erb (0.1ms)
+I, [2016-12-12T14:34:37.495689 #1006]  INFO -- :   Rendered layouts/_header.html.erb (1.4ms)
+I, [2016-12-12T14:34:37.496774 #1006]  INFO -- : Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+I, [2016-12-12T15:16:46.969580 #998]  INFO -- : Started HEAD "/" for 40.115.55.205 at 2016-12-12 15:16:46 -0500
+I, [2016-12-12T15:16:46.982433 #998]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-12T15:16:46.990445 #998]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (1.7ms)
+I, [2016-12-12T15:16:46.995969 #998]  INFO -- :   Rendered layouts/_nav.html.erb (0.4ms)
+I, [2016-12-12T15:16:46.997162 #998]  INFO -- :   Rendered layouts/_showcase.html.erb (0.3ms)
+I, [2016-12-12T15:16:46.997321 #998]  INFO -- :   Rendered layouts/_header.html.erb (3.2ms)
+I, [2016-12-12T15:16:46.997978 #998]  INFO -- : Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+I, [2016-12-12T15:33:20.944847 #1006]  INFO -- : Started GET "/" for 185.110.132.231 at 2016-12-12 15:33:20 -0500
+I, [2016-12-12T15:33:20.953666 #1006]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-12T15:33:20.958717 #1006]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (1.1ms)
+I, [2016-12-12T15:33:20.963880 #1006]  INFO -- :   Rendered layouts/_nav.html.erb (0.1ms)
+I, [2016-12-12T15:33:20.964332 #1006]  INFO -- :   Rendered layouts/_showcase.html.erb (0.1ms)
+I, [2016-12-12T15:33:20.964434 #1006]  INFO -- :   Rendered layouts/_header.html.erb (0.9ms)
+I, [2016-12-12T15:33:20.965072 #1006]  INFO -- : Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+I, [2016-12-12T16:22:40.826029 #998]  INFO -- : Started POST "/azenv.php?auth=148157776095&a=PSCMN&i=2328177403&p=80" for 95.213.177.125 at 2016-12-12 16:22:40 -0500
+F, [2016-12-12T16:22:40.832908 #998] FATAL -- : 
+ActionController::RoutingError (No route matches [POST] "/azenv.php"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:562:in `process_client'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:132:in `start'
+  unicorn (5.2.0) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `<main>'
+
+
+I, [2016-12-12T16:56:04.755775 #1006]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-12 16:56:04 -0500
+I, [2016-12-12T16:56:04.763954 #1006]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-12T16:56:04.771019 #1006]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.1ms)
+I, [2016-12-12T16:56:04.773499 #1006]  INFO -- :   Rendered layouts/_nav.html.erb (0.0ms)
+I, [2016-12-12T16:56:04.773851 #1006]  INFO -- :   Rendered layouts/_showcase.html.erb (0.1ms)
+I, [2016-12-12T16:56:04.773959 #1006]  INFO -- :   Rendered layouts/_header.html.erb (0.7ms)
+I, [2016-12-12T16:56:04.774359 #1006]  INFO -- : Completed 200 OK in 10ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+I, [2016-12-12T17:01:35.110536 #998]  INFO -- : Started GET "/axis-cgi/jpg/image.cgi" for 217.118.84.185 at 2016-12-12 17:01:35 -0500
+F, [2016-12-12T17:01:35.116884 #998] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/axis-cgi/jpg/image.cgi"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:562:in `process_client'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:132:in `start'
+  unicorn (5.2.0) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `<main>'
+
+
+I, [2016-12-12T17:21:43.483433 #1003]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-12 17:21:43 -0500
+I, [2016-12-12T17:21:43.491680 #1003]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-12T17:21:43.495779 #1003]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.1ms)
+I, [2016-12-12T17:21:43.498526 #1003]  INFO -- :   Rendered layouts/_nav.html.erb (0.1ms)
+I, [2016-12-12T17:21:43.498860 #1003]  INFO -- :   Rendered layouts/_showcase.html.erb (0.0ms)
+I, [2016-12-12T17:21:43.499132 #1003]  INFO -- :   Rendered layouts/_header.html.erb (0.6ms)
+I, [2016-12-12T17:21:43.499609 #1003]  INFO -- : Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+I, [2016-12-12T17:21:46.041652 #1006]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-12 17:21:46 -0500
+I, [2016-12-12T17:21:46.046744 #1006]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-12T17:21:46.051288 #1006]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.3ms)
+I, [2016-12-12T17:21:46.055789 #1006]  INFO -- :   Rendered layouts/_nav.html.erb (0.0ms)
+I, [2016-12-12T17:21:46.056274 #1006]  INFO -- :   Rendered layouts/_showcase.html.erb (0.1ms)
+I, [2016-12-12T17:21:46.056379 #1006]  INFO -- :   Rendered layouts/_header.html.erb (0.9ms)
+I, [2016-12-12T17:21:46.057199 #1006]  INFO -- : Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+I, [2016-12-12T17:24:20.020749 #1003]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-12 17:24:20 -0500
+I, [2016-12-12T17:24:20.029297 #1003]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-12T17:24:20.034210 #1003]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.2ms)
+I, [2016-12-12T17:24:20.037893 #1003]  INFO -- :   Rendered layouts/_nav.html.erb (0.1ms)
+I, [2016-12-12T17:24:20.038461 #1003]  INFO -- :   Rendered layouts/_showcase.html.erb (0.1ms)
+I, [2016-12-12T17:24:20.038624 #1003]  INFO -- :   Rendered layouts/_header.html.erb (1.0ms)
+I, [2016-12-12T17:24:20.039355 #1003]  INFO -- : Completed 200 OK in 10ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+I, [2016-12-12T17:27:34.105488 #998]  INFO -- : Started GET "/" for 198.55.114.166 at 2016-12-12 17:27:34 -0500
+I, [2016-12-12T17:27:34.112345 #998]  INFO -- : Processing by ApplicationController#index as */*
+I, [2016-12-12T17:27:34.115986 #998]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.2ms)
+I, [2016-12-12T17:27:34.118931 #998]  INFO -- :   Rendered layouts/_nav.html.erb (0.1ms)
+I, [2016-12-12T17:27:34.119515 #998]  INFO -- :   Rendered layouts/_showcase.html.erb (0.1ms)
+I, [2016-12-12T17:27:34.119633 #998]  INFO -- :   Rendered layouts/_header.html.erb (0.9ms)
+I, [2016-12-12T17:27:34.120169 #998]  INFO -- : Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+I, [2016-12-12T17:33:34.100221 #1003]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-12 17:33:34 -0500
+I, [2016-12-12T17:33:34.109063 #1003]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-12T17:33:34.112983 #1003]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.2ms)
+I, [2016-12-12T17:33:34.115869 #1003]  INFO -- :   Rendered layouts/_nav.html.erb (0.1ms)
+I, [2016-12-12T17:33:34.116332 #1003]  INFO -- :   Rendered layouts/_showcase.html.erb (0.1ms)
+I, [2016-12-12T17:33:34.116426 #1003]  INFO -- :   Rendered layouts/_header.html.erb (0.8ms)
+I, [2016-12-12T17:33:34.116932 #1003]  INFO -- : Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+I, [2016-12-12T17:33:38.702635 #1006]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-12 17:33:38 -0500
+I, [2016-12-12T17:33:38.709314 #1006]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-12T17:33:38.713232 #1006]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.2ms)
+I, [2016-12-12T17:33:38.715432 #1006]  INFO -- :   Rendered layouts/_nav.html.erb (0.1ms)
+I, [2016-12-12T17:33:38.716016 #1006]  INFO -- :   Rendered layouts/_showcase.html.erb (0.1ms)
+I, [2016-12-12T17:33:38.716115 #1006]  INFO -- :   Rendered layouts/_header.html.erb (0.9ms)
+I, [2016-12-12T17:33:38.716499 #1006]  INFO -- : Completed 200 OK in 7ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+I, [2016-12-12T17:33:39.821270 #1000]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-12 17:33:39 -0500
+I, [2016-12-12T17:33:39.919697 #1000]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-12T17:33:39.960250 #1000]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (1.2ms)
+I, [2016-12-12T17:33:39.964886 #1000]  INFO -- :   Rendered layouts/_nav.html.erb (0.3ms)
+I, [2016-12-12T17:33:39.967171 #1000]  INFO -- :   Rendered layouts/_about.html.erb (0.4ms)
+I, [2016-12-12T17:33:39.968125 #1000]  INFO -- :   Rendered layouts/_projects.html.erb (0.4ms)
+I, [2016-12-12T17:33:39.969052 #1000]  INFO -- :   Rendered layouts/_resume.html.erb (0.4ms)
+I, [2016-12-12T17:33:39.970005 #1000]  INFO -- :   Rendered layouts/_blog.html.erb (0.4ms)
+I, [2016-12-12T17:33:39.970899 #1000]  INFO -- :   Rendered layouts/_contact.html.erb (0.4ms)
+I, [2016-12-12T17:33:39.970987 #1000]  INFO -- :   Rendered layouts/_showcase.html.erb (5.4ms)
+I, [2016-12-12T17:33:39.971074 #1000]  INFO -- :   Rendered layouts/_header.html.erb (7.6ms)
+I, [2016-12-12T17:33:39.971685 #1000]  INFO -- : Completed 200 OK in 52ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+I, [2016-12-12T17:36:32.247398 #998]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-12 17:36:32 -0500
+I, [2016-12-12T17:36:32.256444 #998]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-12T17:36:32.259989 #998]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.3ms)
+I, [2016-12-12T17:36:32.262370 #998]  INFO -- :   Rendered layouts/_nav.html.erb (0.1ms)
+I, [2016-12-12T17:36:32.262764 #998]  INFO -- :   Rendered layouts/_showcase.html.erb (0.1ms)
+I, [2016-12-12T17:36:32.262873 #998]  INFO -- :   Rendered layouts/_header.html.erb (0.8ms)
+I, [2016-12-12T17:36:32.263309 #998]  INFO -- : Completed 200 OK in 7ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+I, [2016-12-12T17:37:13.955445 #1000]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-12 17:37:13 -0500
+I, [2016-12-12T17:37:13.966326 #1000]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-12T17:37:13.970235 #1000]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.2ms)
+I, [2016-12-12T17:37:13.972387 #1000]  INFO -- :   Rendered layouts/_nav.html.erb (0.0ms)
+I, [2016-12-12T17:37:13.972980 #1000]  INFO -- :   Rendered layouts/_about.html.erb (0.1ms)
+I, [2016-12-12T17:37:13.973249 #1000]  INFO -- :   Rendered layouts/_projects.html.erb (0.1ms)
+I, [2016-12-12T17:37:13.973518 #1000]  INFO -- :   Rendered layouts/_resume.html.erb (0.1ms)
+I, [2016-12-12T17:37:13.973828 #1000]  INFO -- :   Rendered layouts/_blog.html.erb (0.1ms)
+I, [2016-12-12T17:37:13.974074 #1000]  INFO -- :   Rendered layouts/_contact.html.erb (0.1ms)
+I, [2016-12-12T17:37:13.974163 #1000]  INFO -- :   Rendered layouts/_showcase.html.erb (1.4ms)
+I, [2016-12-12T17:37:13.974264 #1000]  INFO -- :   Rendered layouts/_header.html.erb (2.1ms)
+I, [2016-12-12T17:37:13.974637 #1000]  INFO -- : Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+I, [2016-12-12T17:37:19.041924 #1006]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-12 17:37:19 -0500
+I, [2016-12-12T17:37:19.047752 #1006]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-12T17:37:19.050533 #1006]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.1ms)
+I, [2016-12-12T17:37:19.052631 #1006]  INFO -- :   Rendered layouts/_nav.html.erb (0.1ms)
+I, [2016-12-12T17:37:19.053028 #1006]  INFO -- :   Rendered layouts/_showcase.html.erb (0.1ms)
+I, [2016-12-12T17:37:19.053133 #1006]  INFO -- :   Rendered layouts/_header.html.erb (0.7ms)
+I, [2016-12-12T17:37:19.053520 #1006]  INFO -- : Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+I, [2016-12-12T17:37:24.472865 #1000]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-12 17:37:24 -0500
+I, [2016-12-12T17:37:24.475454 #1000]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-12T17:37:24.477047 #1000]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.1ms)
+I, [2016-12-12T17:37:24.478901 #1000]  INFO -- :   Rendered layouts/_nav.html.erb (0.1ms)
+I, [2016-12-12T17:37:24.479522 #1000]  INFO -- :   Rendered layouts/_about.html.erb (0.1ms)
+I, [2016-12-12T17:37:24.479844 #1000]  INFO -- :   Rendered layouts/_projects.html.erb (0.0ms)
+I, [2016-12-12T17:37:24.480125 #1000]  INFO -- :   Rendered layouts/_resume.html.erb (0.1ms)
+I, [2016-12-12T17:37:24.480458 #1000]  INFO -- :   Rendered layouts/_blog.html.erb (0.0ms)
+I, [2016-12-12T17:37:24.480752 #1000]  INFO -- :   Rendered layouts/_contact.html.erb (0.0ms)
+I, [2016-12-12T17:37:24.480876 #1000]  INFO -- :   Rendered layouts/_showcase.html.erb (1.6ms)
+I, [2016-12-12T17:37:24.481015 #1000]  INFO -- :   Rendered layouts/_header.html.erb (2.5ms)
+I, [2016-12-12T17:37:24.481354 #1000]  INFO -- : Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+I, [2016-12-12T17:37:25.731256 #1006]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-12 17:37:25 -0500
+I, [2016-12-12T17:37:25.733396 #1006]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-12T17:37:25.734518 #1006]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.0ms)
+I, [2016-12-12T17:37:25.735839 #1006]  INFO -- :   Rendered layouts/_nav.html.erb (0.1ms)
+I, [2016-12-12T17:37:25.736180 #1006]  INFO -- :   Rendered layouts/_showcase.html.erb (0.1ms)
+I, [2016-12-12T17:37:25.736281 #1006]  INFO -- :   Rendered layouts/_header.html.erb (0.7ms)
+I, [2016-12-12T17:37:25.736520 #1006]  INFO -- : Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+I, [2016-12-12T17:37:27.011481 #1000]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-12 17:37:27 -0500
+I, [2016-12-12T17:37:27.013475 #1000]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-12T17:37:27.015010 #1000]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.1ms)
+I, [2016-12-12T17:37:27.017044 #1000]  INFO -- :   Rendered layouts/_nav.html.erb (0.1ms)
+I, [2016-12-12T17:37:27.017690 #1000]  INFO -- :   Rendered layouts/_about.html.erb (0.1ms)
+I, [2016-12-12T17:37:27.017986 #1000]  INFO -- :   Rendered layouts/_projects.html.erb (0.1ms)
+I, [2016-12-12T17:37:27.018293 #1000]  INFO -- :   Rendered layouts/_resume.html.erb (0.1ms)
+I, [2016-12-12T17:37:27.018698 #1000]  INFO -- :   Rendered layouts/_blog.html.erb (0.1ms)
+I, [2016-12-12T17:37:27.018995 #1000]  INFO -- :   Rendered layouts/_contact.html.erb (0.1ms)
+I, [2016-12-12T17:37:27.019123 #1000]  INFO -- :   Rendered layouts/_showcase.html.erb (1.7ms)
+I, [2016-12-12T17:37:27.019273 #1000]  INFO -- :   Rendered layouts/_header.html.erb (2.6ms)
+I, [2016-12-12T17:37:27.019617 #1000]  INFO -- : Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+I, [2016-12-12T17:38:19.060137 #1006]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-12 17:38:19 -0500
+I, [2016-12-12T17:38:19.062403 #1006]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-12T17:38:19.063732 #1006]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.1ms)
+I, [2016-12-12T17:38:19.064987 #1006]  INFO -- :   Rendered layouts/_nav.html.erb (0.0ms)
+I, [2016-12-12T17:38:19.065287 #1006]  INFO -- :   Rendered layouts/_showcase.html.erb (0.1ms)
+I, [2016-12-12T17:38:19.065382 #1006]  INFO -- :   Rendered layouts/_header.html.erb (0.5ms)
+I, [2016-12-12T17:38:19.065685 #1006]  INFO -- : Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+I, [2016-12-12T17:38:21.595880 #1003]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-12 17:38:21 -0500
+I, [2016-12-12T17:38:21.600656 #1003]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-12T17:38:21.603300 #1003]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.1ms)
+I, [2016-12-12T17:38:21.605496 #1003]  INFO -- :   Rendered layouts/_nav.html.erb (0.0ms)
+I, [2016-12-12T17:38:21.605855 #1003]  INFO -- :   Rendered layouts/_showcase.html.erb (0.1ms)
+I, [2016-12-12T17:38:21.605955 #1003]  INFO -- :   Rendered layouts/_header.html.erb (0.7ms)
+I, [2016-12-12T17:38:21.606390 #1003]  INFO -- : Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+I, [2016-12-12T17:38:23.495935 #1006]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-12 17:38:23 -0500
+I, [2016-12-12T17:38:23.498522 #1006]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-12T17:38:23.500919 #1006]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.1ms)
+I, [2016-12-12T17:38:23.503300 #1006]  INFO -- :   Rendered layouts/_nav.html.erb (0.1ms)
+I, [2016-12-12T17:38:23.503906 #1006]  INFO -- :   Rendered layouts/_showcase.html.erb (0.1ms)
+I, [2016-12-12T17:38:23.504111 #1006]  INFO -- :   Rendered layouts/_header.html.erb (1.0ms)
+I, [2016-12-12T17:38:23.504488 #1006]  INFO -- : Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+I, [2016-12-12T17:38:25.122012 #1003]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-12 17:38:25 -0500
+I, [2016-12-12T17:38:25.123261 #1003]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-12T17:38:25.124223 #1003]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.0ms)
+I, [2016-12-12T17:38:25.125532 #1003]  INFO -- :   Rendered layouts/_nav.html.erb (0.0ms)
+I, [2016-12-12T17:38:25.125796 #1003]  INFO -- :   Rendered layouts/_showcase.html.erb (0.1ms)
+I, [2016-12-12T17:38:25.125896 #1003]  INFO -- :   Rendered layouts/_header.html.erb (0.6ms)
+I, [2016-12-12T17:38:25.126091 #1003]  INFO -- : Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+I, [2016-12-12T17:38:30.245785 #998]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-12 17:38:30 -0500
+I, [2016-12-12T17:38:30.249917 #998]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-12T17:38:30.251427 #998]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.1ms)
+I, [2016-12-12T17:38:30.253224 #998]  INFO -- :   Rendered layouts/_nav.html.erb (0.1ms)
+I, [2016-12-12T17:38:30.253551 #998]  INFO -- :   Rendered layouts/_showcase.html.erb (0.0ms)
+I, [2016-12-12T17:38:30.253667 #998]  INFO -- :   Rendered layouts/_header.html.erb (0.6ms)
+I, [2016-12-12T17:38:30.254015 #998]  INFO -- : Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+I, [2016-12-12T17:38:34.959456 #1000]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-12 17:38:34 -0500
+I, [2016-12-12T17:38:34.961341 #1000]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-12T17:38:34.962634 #1000]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.1ms)
+I, [2016-12-12T17:38:34.963990 #1000]  INFO -- :   Rendered layouts/_nav.html.erb (0.1ms)
+I, [2016-12-12T17:38:34.964402 #1000]  INFO -- :   Rendered layouts/_about.html.erb (0.0ms)
+I, [2016-12-12T17:38:34.964592 #1000]  INFO -- :   Rendered layouts/_projects.html.erb (0.0ms)
+I, [2016-12-12T17:38:34.964767 #1000]  INFO -- :   Rendered layouts/_resume.html.erb (0.0ms)
+I, [2016-12-12T17:38:34.965055 #1000]  INFO -- :   Rendered layouts/_blog.html.erb (0.0ms)
+I, [2016-12-12T17:38:34.965306 #1000]  INFO -- :   Rendered layouts/_contact.html.erb (0.0ms)
+I, [2016-12-12T17:38:34.965388 #1000]  INFO -- :   Rendered layouts/_showcase.html.erb (1.1ms)
+I, [2016-12-12T17:38:34.965481 #1000]  INFO -- :   Rendered layouts/_header.html.erb (1.7ms)
+I, [2016-12-12T17:38:34.965701 #1000]  INFO -- : Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+I, [2016-12-12T23:59:18.619002 #998]  INFO -- : Started GET "/" for 40.77.167.90 at 2016-12-12 23:59:18 -0500
+I, [2016-12-12T23:59:18.628436 #998]  INFO -- : Processing by ApplicationController#index as */*
+I, [2016-12-12T23:59:18.632254 #998]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.3ms)
+I, [2016-12-12T23:59:18.636684 #998]  INFO -- :   Rendered layouts/_nav.html.erb (0.1ms)
+I, [2016-12-12T23:59:18.637243 #998]  INFO -- :   Rendered layouts/_showcase.html.erb (0.1ms)
+I, [2016-12-12T23:59:18.637445 #998]  INFO -- :   Rendered layouts/_header.html.erb (1.3ms)
+I, [2016-12-12T23:59:18.638102 #998]  INFO -- : Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+I, [2016-12-13T05:13:12.837977 #1000]  INFO -- : Started GET "/" for 192.99.228.176 at 2016-12-13 05:13:12 -0500
+I, [2016-12-13T05:13:12.847759 #1000]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-13T05:13:12.852056 #1000]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.5ms)
+I, [2016-12-13T05:13:12.857166 #1000]  INFO -- :   Rendered layouts/_nav.html.erb (0.1ms)
+I, [2016-12-13T05:13:12.858075 #1000]  INFO -- :   Rendered layouts/_about.html.erb (0.1ms)
+I, [2016-12-13T05:13:12.858745 #1000]  INFO -- :   Rendered layouts/_projects.html.erb (0.1ms)
+I, [2016-12-13T05:13:12.859141 #1000]  INFO -- :   Rendered layouts/_resume.html.erb (0.1ms)
+I, [2016-12-13T05:13:12.859532 #1000]  INFO -- :   Rendered layouts/_blog.html.erb (0.1ms)
+I, [2016-12-13T05:13:12.859982 #1000]  INFO -- :   Rendered layouts/_contact.html.erb (0.1ms)
+I, [2016-12-13T05:13:12.860149 #1000]  INFO -- :   Rendered layouts/_showcase.html.erb (2.4ms)
+I, [2016-12-13T05:13:12.860317 #1000]  INFO -- :   Rendered layouts/_header.html.erb (3.6ms)
+I, [2016-12-13T05:13:12.861403 #1000]  INFO -- : Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+I, [2016-12-13T06:23:33.726189 #998]  INFO -- : Started GET "/" for 14.215.156.100 at 2016-12-13 06:23:33 -0500
+I, [2016-12-13T06:23:33.737020 #998]  INFO -- : Processing by ApplicationController#index as */*
+I, [2016-12-13T06:23:33.741885 #998]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.3ms)
+I, [2016-12-13T06:23:33.746244 #998]  INFO -- :   Rendered layouts/_nav.html.erb (0.1ms)
+I, [2016-12-13T06:23:33.746936 #998]  INFO -- :   Rendered layouts/_showcase.html.erb (0.1ms)
+I, [2016-12-13T06:23:33.747104 #998]  INFO -- :   Rendered layouts/_header.html.erb (1.2ms)
+I, [2016-12-13T06:23:33.747922 #998]  INFO -- : Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+I, [2016-12-13T09:47:16.996943 #998]  INFO -- : Started GET "/" for 157.55.39.184 at 2016-12-13 09:47:16 -0500
+I, [2016-12-13T09:47:17.036839 #998]  INFO -- : Processing by ApplicationController#index as */*
+I, [2016-12-13T09:47:17.040852 #998]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.2ms)
+I, [2016-12-13T09:47:17.044140 #998]  INFO -- :   Rendered layouts/_nav.html.erb (0.1ms)
+I, [2016-12-13T09:47:17.044564 #998]  INFO -- :   Rendered layouts/_showcase.html.erb (0.1ms)
+I, [2016-12-13T09:47:17.044737 #998]  INFO -- :   Rendered layouts/_header.html.erb (0.8ms)
+I, [2016-12-13T09:47:17.045304 #998]  INFO -- : Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+I, [2016-12-13T13:01:39.562504 #998]  INFO -- : Started HEAD "/" for 52.9.203.218 at 2016-12-13 13:01:39 -0500
+I, [2016-12-13T13:01:39.573760 #998]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-13T13:01:39.578137 #998]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.6ms)
+I, [2016-12-13T13:01:39.583163 #998]  INFO -- :   Rendered layouts/_nav.html.erb (0.1ms)
+I, [2016-12-13T13:01:39.583995 #998]  INFO -- :   Rendered layouts/_showcase.html.erb (0.1ms)
+I, [2016-12-13T13:01:39.584232 #998]  INFO -- :   Rendered layouts/_header.html.erb (1.6ms)
+I, [2016-12-13T13:01:39.584952 #998]  INFO -- : Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+I, [2016-12-13T14:23:11.043870 #1000]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-13 14:23:11 -0500
+I, [2016-12-13T14:23:11.049660 #1000]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-13T14:23:11.052082 #1000]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.3ms)
+I, [2016-12-13T14:23:11.054541 #1000]  INFO -- :   Rendered layouts/_nav.html.erb (0.1ms)
+I, [2016-12-13T14:23:11.055016 #1000]  INFO -- :   Rendered layouts/_about.html.erb (0.1ms)
+I, [2016-12-13T14:23:11.055242 #1000]  INFO -- :   Rendered layouts/_projects.html.erb (0.1ms)
+I, [2016-12-13T14:23:11.055530 #1000]  INFO -- :   Rendered layouts/_resume.html.erb (0.1ms)
+I, [2016-12-13T14:23:11.055768 #1000]  INFO -- :   Rendered layouts/_blog.html.erb (0.1ms)
+I, [2016-12-13T14:23:11.055996 #1000]  INFO -- :   Rendered layouts/_contact.html.erb (0.0ms)
+I, [2016-12-13T14:23:11.056267 #1000]  INFO -- :   Rendered layouts/_showcase.html.erb (1.3ms)
+I, [2016-12-13T14:23:11.056373 #1000]  INFO -- :   Rendered layouts/_header.html.erb (2.1ms)
+I, [2016-12-13T14:23:11.056768 #1000]  INFO -- : Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+I, [2016-12-13T14:23:15.590441 #1003]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-13 14:23:15 -0500
+I, [2016-12-13T14:23:15.597704 #1003]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-13T14:23:15.603986 #1003]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.3ms)
+I, [2016-12-13T14:23:15.606324 #1003]  INFO -- :   Rendered layouts/_nav.html.erb (0.0ms)
+I, [2016-12-13T14:23:15.606797 #1003]  INFO -- :   Rendered layouts/_showcase.html.erb (0.1ms)
+I, [2016-12-13T14:23:15.606898 #1003]  INFO -- :   Rendered layouts/_header.html.erb (0.7ms)
+I, [2016-12-13T14:23:15.607332 #1003]  INFO -- : Completed 200 OK in 9ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+I, [2016-12-13T14:24:04.772146 #998]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-13 14:24:04 -0500
+I, [2016-12-13T14:24:04.782581 #998]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-13T14:24:04.785922 #998]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.3ms)
+I, [2016-12-13T14:24:04.788050 #998]  INFO -- :   Rendered layouts/_nav.html.erb (0.1ms)
+I, [2016-12-13T14:24:04.788482 #998]  INFO -- :   Rendered layouts/_showcase.html.erb (0.1ms)
+I, [2016-12-13T14:24:04.788580 #998]  INFO -- :   Rendered layouts/_header.html.erb (0.8ms)
+I, [2016-12-13T14:24:04.788960 #998]  INFO -- : Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+I, [2016-12-13T14:24:09.200414 #1003]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-13 14:24:09 -0500
+I, [2016-12-13T14:24:09.207787 #1003]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-13T14:24:09.212499 #1003]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.2ms)
+I, [2016-12-13T14:24:09.215120 #1003]  INFO -- :   Rendered layouts/_nav.html.erb (0.1ms)
+I, [2016-12-13T14:24:09.215494 #1003]  INFO -- :   Rendered layouts/_showcase.html.erb (0.0ms)
+I, [2016-12-13T14:24:09.215615 #1003]  INFO -- :   Rendered layouts/_header.html.erb (0.7ms)
+I, [2016-12-13T14:24:09.216083 #1003]  INFO -- : Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+I, [2016-12-13T14:24:40.052201 #998]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-13 14:24:40 -0500
+I, [2016-12-13T14:24:40.053639 #998]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-13T14:24:40.054543 #998]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.1ms)
+I, [2016-12-13T14:24:40.055623 #998]  INFO -- :   Rendered layouts/_nav.html.erb (0.0ms)
+I, [2016-12-13T14:24:40.055940 #998]  INFO -- :   Rendered layouts/_showcase.html.erb (0.1ms)
+I, [2016-12-13T14:24:40.056081 #998]  INFO -- :   Rendered layouts/_header.html.erb (0.6ms)
+I, [2016-12-13T14:24:40.056306 #998]  INFO -- : Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+I, [2016-12-13T14:53:57.216385 #1003]  INFO -- : Started GET "/" for 73.153.4.249 at 2016-12-13 14:53:57 -0500
+I, [2016-12-13T14:53:57.223674 #1003]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-13T14:53:57.227828 #1003]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.2ms)
+I, [2016-12-13T14:53:57.231118 #1003]  INFO -- :   Rendered layouts/_nav.html.erb (0.1ms)
+I, [2016-12-13T14:53:57.231635 #1003]  INFO -- :   Rendered layouts/_showcase.html.erb (0.1ms)
+I, [2016-12-13T14:53:57.231764 #1003]  INFO -- :   Rendered layouts/_header.html.erb (0.9ms)
+I, [2016-12-13T14:53:57.232363 #1003]  INFO -- : Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+I, [2016-12-13T17:57:06.221983 #1000]  INFO -- : Started GET "/cgi/common.cgi" for 201.37.126.150 at 2016-12-13 17:57:06 -0500
+F, [2016-12-13T17:57:06.234791 #1000] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/cgi/common.cgi"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:562:in `process_client'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:132:in `start'
+  unicorn (5.2.0) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `<main>'
+
+
+I, [2016-12-13T17:57:06.566932 #998]  INFO -- : Started GET "/stssys.htm" for 201.37.126.150 at 2016-12-13 17:57:06 -0500
+F, [2016-12-13T17:57:06.571022 #998] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stssys.htm"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:562:in `process_client'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:132:in `start'
+  unicorn (5.2.0) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `<main>'
+
+
+I, [2016-12-13T17:57:06.919377 #1000]  INFO -- : Started GET "/" for 201.37.126.150 at 2016-12-13 17:57:06 -0500
+I, [2016-12-13T17:57:06.924430 #1000]  INFO -- : Processing by ApplicationController#index as */*
+I, [2016-12-13T17:57:06.935223 #1000]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (2.8ms)
+I, [2016-12-13T17:57:06.944856 #1000]  INFO -- :   Rendered layouts/_nav.html.erb (0.3ms)
+I, [2016-12-13T17:57:06.951634 #1000]  INFO -- :   Rendered layouts/_about.html.erb (0.4ms)
+I, [2016-12-13T17:57:06.954591 #1000]  INFO -- :   Rendered layouts/_projects.html.erb (0.3ms)
+I, [2016-12-13T17:57:06.957586 #1000]  INFO -- :   Rendered layouts/_resume.html.erb (0.3ms)
+I, [2016-12-13T17:57:06.960568 #1000]  INFO -- :   Rendered layouts/_blog.html.erb (0.4ms)
+I, [2016-12-13T17:57:06.963668 #1000]  INFO -- :   Rendered layouts/_contact.html.erb (0.5ms)
+I, [2016-12-13T17:57:06.963759 #1000]  INFO -- :   Rendered layouts/_showcase.html.erb (15.8ms)
+I, [2016-12-13T17:57:06.963862 #1000]  INFO -- :   Rendered layouts/_header.html.erb (23.1ms)
+I, [2016-12-13T17:57:06.964303 #1000]  INFO -- : Completed 200 OK in 40ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+I, [2016-12-13T17:57:07.379122 #998]  INFO -- : Started POST "/command.php" for 201.37.126.150 at 2016-12-13 17:57:07 -0500
+F, [2016-12-13T17:57:07.380522 #998] FATAL -- : 
+ActionController::RoutingError (No route matches [POST] "/command.php"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:562:in `process_client'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  unicorn (5.2.0) lib/unicorn/http_server.rb:132:in `start'
+  unicorn (5.2.0) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `<main>'
+
+
+I, [2016-12-13T18:11:18.955769 #1006]  INFO -- : Started GET "/" for 93.174.93.218 at 2016-12-13 18:11:18 -0500
+I, [2016-12-13T18:11:18.966359 #1006]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-13T18:11:18.970280 #1006]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.3ms)
+I, [2016-12-13T18:11:18.974705 #1006]  INFO -- :   Rendered layouts/_nav.html.erb (0.1ms)
+I, [2016-12-13T18:11:18.975349 #1006]  INFO -- :   Rendered layouts/_showcase.html.erb (0.1ms)
+I, [2016-12-13T18:11:18.975530 #1006]  INFO -- :   Rendered layouts/_header.html.erb (1.2ms)
+I, [2016-12-13T18:11:18.976305 #1006]  INFO -- : Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+I, [2016-12-13T19:49:00.403032 #1003]  INFO -- : Started GET "/" for 66.249.64.98 at 2016-12-13 19:49:00 -0500
+I, [2016-12-13T19:49:00.412461 #1003]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-13T19:49:00.414973 #1003]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.1ms)
+I, [2016-12-13T19:49:00.417410 #1003]  INFO -- :   Rendered layouts/_nav.html.erb (0.0ms)
+I, [2016-12-13T19:49:00.417810 #1003]  INFO -- :   Rendered layouts/_showcase.html.erb (0.1ms)
+I, [2016-12-13T19:49:00.417925 #1003]  INFO -- :   Rendered layouts/_header.html.erb (0.7ms)
+I, [2016-12-13T19:49:00.418345 #1003]  INFO -- : Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+I, [2016-12-13T21:47:44.046947 #998]  INFO -- : Started GET "/" for 93.174.93.218 at 2016-12-13 21:47:44 -0500
+I, [2016-12-13T21:47:44.058626 #998]  INFO -- : Processing by ApplicationController#index as HTML
+I, [2016-12-13T21:47:44.061904 #998]  INFO -- :   Rendered portfolio/index.html.erb within layouts/application (0.3ms)
+I, [2016-12-13T21:47:44.064870 #998]  INFO -- :   Rendered layouts/_nav.html.erb (0.2ms)
+I, [2016-12-13T21:47:44.065545 #998]  INFO -- :   Rendered layouts/_showcase.html.erb (0.1ms)
+I, [2016-12-13T21:47:44.065691 #998]  INFO -- :   Rendered layouts/_header.html.erb (1.2ms)
+I, [2016-12-13T21:47:44.066230 #998]  INFO -- : Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms)

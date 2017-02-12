@@ -44,7 +44,9 @@ function hideAllSections() {
   $("#about-content").hide();
   $("#trailInfo-content").hide();
   $("#altFuel-content").hide();
+  $("#yogaFlow-content").hide();
 }
+
 
 function showPanel(section){
   hideAllSections();
@@ -57,18 +59,21 @@ function hideResumeSections() {
     $("#" + items[i].id + "-content").hide();
   }
 }
-
-function showProjectSections(section) {
-  hideAllSections();
-  $("#" + section.id + "-content").show();
-}
-
-function hideProjectSections() {
-  var items = document.querySelectorAll(".project");
-  for (var i = 0; i < items.length; i++) {
-    $("#" + items[i].id + "-content").hide();
-  }
-}
+// <<<<<<< HEAD
+//
+// function showProjectSections(section) {
+//   hideAllSections();
+//   $("#" + section.id + "-content").show();
+// }
+//
+// function hideProjectSections() {
+//   var items = document.querySelectorAll(".project");
+//   for (var i = 0; i < items.length; i++) {
+//     $("#" + items[i].id + "-content").hide();
+//   }
+// }
+// =======
+// >>>>>>> portfolio/master
 //
 
 //
@@ -98,4 +103,14 @@ function hideProjectSections() {
 // }
 //
 
+// function hideProjectSections() {
+//   var items = document.querySelectorAll(".project");
+//   for (var i = 0; i < items.length; i++) {
+//     $("#" + items[i].id + "-content").hide();
+//   }
+// }
 //
+function showProjectSections(section) {
+  hideAllSections();
+  $("#" + section.id + "-content").show();
+}

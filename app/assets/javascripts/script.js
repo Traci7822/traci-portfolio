@@ -1,6 +1,5 @@
 $(document).ready(function() {
   hideAllSections();
-  hideProjectSections();
   $("#about-content").show();
 
 
@@ -19,16 +18,22 @@ $(document).ready(function() {
     hideResumeSections();
     $("#" + this.id + "-content").show();
   });
-
+//
+//   $(".resumeItem").click(function(event) {
+//     event.preventDefault();
+//     showResumeSection(this);
+//   });
+//
   $(".contactButton").click(function(event) {
     event.preventDefault();
     showPanel(this);
   });
-
+//
   $(".projectItem").click(function(event) {
     event.preventDefault();
     showProjectSections(this);
   });
+//
 });
 
 function hideAllSections() {
@@ -40,6 +45,7 @@ function hideAllSections() {
   $("#trailInfo-content").hide();
   $("#altFuel-content").hide();
   $("#yogaFlow-content").hide();
+  document.querySelectorAll(".project").hide();
 }
 
 
@@ -98,13 +104,13 @@ function hideResumeSections() {
 // }
 //
 
-function hideProjectSections() {
-  var items = document.querySelectorAll(".project");
-  for (var i = 0; i < items.length; i++) {
-    $("#" + items[i].id + "-content").hide();
-  }
-}
-
+// function hideProjectSections() {
+//   var items = document.querySelectorAll(".project");
+//   for (var i = 0; i < items.length; i++) {
+//     $("#" + items[i].id + "-content").hide();
+//   }
+// }
+//
 function showProjectSections(section) {
   hideAllSections();
   $("#" + section.id + "-content").show();

@@ -39,6 +39,7 @@ function hideAllSections() {
   $("#trailInfo-content").hide();
   $("#altFuel-content").hide();
   $("#yogaFlow-content").hide();
+  hideResumeSections();
 }
 
 
@@ -49,6 +50,13 @@ function showPanel(section){
 
 function hideResumeSections() {
   var items = document.querySelectorAll(".resumeSection");
+  for (var i = 0; i < items.length; i++) {
+    $("#" + items[i].id + "-content").hide();
+  }
+}
+
+function hideProjectSections() {
+  var items = document.querySelectorAll(".projectSection");
   for (var i = 0; i < items.length; i++) {
     $("#" + items[i].id + "-content").hide();
   }

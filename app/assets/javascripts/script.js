@@ -7,6 +7,7 @@ $(document).ready(function() {
     event.preventDefault();
     showPanel(this);
     if (this.id == "resume") {
+    //not showing on hosted version
       hideResumeSections();
       $("#technicalSkills-content").show();
     }
@@ -17,17 +18,22 @@ $(document).ready(function() {
     hideResumeSections();
     $("#" + this.id + "-content").show();
   });
-
+//
+//   $(".resumeItem").click(function(event) {
+//     event.preventDefault();
+//     showResumeSection(this);
+//   });
+//
   $(".contactButton").click(function(event) {
     event.preventDefault();
     showPanel(this);
   });
-
+//
   $(".projectItem").click(function(event) {
     event.preventDefault();
     showProjectSections(this);
   });
-
+//
 });
 
 function hideAllSections() {
@@ -41,6 +47,7 @@ function hideAllSections() {
   $("#yogaFlow-content").hide();
 }
 
+
 function showPanel(section){
   hideAllSections();
    $("#" + section.id + "-content").show();
@@ -52,15 +59,42 @@ function hideResumeSections() {
     $("#" + items[i].id + "-content").hide();
   }
 }
+//
 
-function showProjectSections(section) {
-  hideAllSections();
-  $("#" + section.id + "-content").show();
-}
+//
+// function hideSections() {
+//   var items = document.getElementsByClassName(".section");
+//   for (var i = 0; i < items.length; i++) {
+//     debugger;
+//
+//     $("#" + items[i].id + "-content").hide();
+//   }
+// }
+//
 
+//
+// function hideResumeLinks() {
+//   var items = document.querySelectorAll(".resumeItem");
+//   for (var i = 0; i < items.length; i++) {
+//     $("#" + items[i].id + "-content").hide();
+//   }
+// }
+//
+
+//
+// function showResumeSection(section) {
+//   hideResumeSections();
+//   $("#" + section.id + "-content").show();
+// }
+//
 // function hideProjectSections() {
 //   var items = document.querySelectorAll(".project");
 //   for (var i = 0; i < items.length; i++) {
 //     $("#" + items[i].id + "-content").hide();
 //   }
 // }
+//
+function showProjectSections(section) {
+  hideAllSections();
+  $("#" + section.id + "-content").show();
+}

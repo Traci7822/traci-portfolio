@@ -1,5 +1,6 @@
 $(document).ready(function() {
   hideAllSections();
+  hideProjectSections();
   $("#about-content").show();
 
 
@@ -39,7 +40,6 @@ function hideAllSections() {
   $("#trailInfo-content").hide();
   $("#altFuel-content").hide();
   $("#yogaFlow-content").hide();
-  hideProjectSections();
 }
 
 
@@ -54,9 +54,52 @@ function hideResumeSections() {
     $("#" + items[i].id + "-content").hide();
   }
 }
+// <<<<<<< HEAD
+//
+// function showProjectSections(section) {
+//   hideAllSections();
+//   $("#" + section.id + "-content").show();
+// }
+//
+// function hideProjectSections() {
+//   var items = document.querySelectorAll(".project");
+//   for (var i = 0; i < items.length; i++) {
+//     $("#" + items[i].id + "-content").hide();
+//   }
+// }
+// =======
+// >>>>>>> portfolio/master
+//
+
+//
+// function hideSections() {
+//   var items = document.getElementsByClassName(".section");
+//   for (var i = 0; i < items.length; i++) {
+//     debugger;
+//
+//     $("#" + items[i].id + "-content").hide();
+//   }
+// }
+//
+
+//
+// function hideResumeLinks() {
+//   var items = document.querySelectorAll(".resumeItem");
+//   for (var i = 0; i < items.length; i++) {
+//     $("#" + items[i].id + "-content").hide();
+//   }
+// }
+//
+
+//
+// function showResumeSection(section) {
+//   hideResumeSections();
+//   $("#" + section.id + "-content").show();
+// }
+//
 
 function hideProjectSections() {
-  var items = document.querySelectorAll(".projectDisplay");
+  var items = document.querySelectorAll(".project");
   for (var i = 0; i < items.length; i++) {
     $("#" + items[i].id + "-content").hide();
   }

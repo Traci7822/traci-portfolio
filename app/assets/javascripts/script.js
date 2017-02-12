@@ -58,9 +58,9 @@ function showProjectSections(section) {
   $("#" + section.id + "-content").show();
 }
 
-function hideProjectSections() {
-  var items = document.querySelectorAll(".project");
-  for (var i = 0; i < items.length; i++) {
-    $("#" + items[i].id + "-content").hide();
-  }
-}
+// function hideProjectSections() {
+//   var items = document.querySelectorAll(".project");
+//   for (var i = 0; i < items.length; i++) {
+//     $("#" + items[i].id + "-content").hide();
+//   }
+// }

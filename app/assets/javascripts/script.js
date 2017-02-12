@@ -39,7 +39,7 @@ function hideAllSections() {
   $("#trailInfo-content").hide();
   $("#altFuel-content").hide();
   $("#yogaFlow-content").hide();
-  hideResumeSections();
+  hideProjectSections();
 }
 
 

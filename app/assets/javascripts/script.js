@@ -7,7 +7,6 @@ $(document).ready(function() {
     event.preventDefault();
     showPanel(this);
     if (this.id == "resume") {
-    //not showing on hosted version
       hideResumeSections();
       $("#technicalSkills-content").show();
     }
@@ -18,22 +17,17 @@ $(document).ready(function() {
     hideResumeSections();
     $("#" + this.id + "-content").show();
   });
-//
-//   $(".resumeItem").click(function(event) {
-//     event.preventDefault();
-//     showResumeSection(this);
-//   });
-//
+
   $(".contactButton").click(function(event) {
     event.preventDefault();
     showPanel(this);
   });
-//
+
   $(".projectItem").click(function(event) {
     event.preventDefault();
     showProjectSections(this);
   });
-//
+
 });
 
 function hideAllSections() {
@@ -69,33 +63,3 @@ function hideProjectSections() {
     $("#" + items[i].id + "-content").hide();
   }
 }
-//
-
-//
-// function hideSections() {
-//   var items = document.getElementsByClassName(".section");
-//   for (var i = 0; i < items.length; i++) {
-//     debugger;
-//
-//     $("#" + items[i].id + "-content").hide();
-//   }
-// }
-//
-
-//
-// function hideResumeLinks() {
-//   var items = document.querySelectorAll(".resumeItem");
-//   for (var i = 0; i < items.length; i++) {
-//     $("#" + items[i].id + "-content").hide();
-//   }
-// }
-//
-
-//
-// function showResumeSection(section) {
-//   hideResumeSections();
-//   $("#" + section.id + "-content").show();
-// }
-//
-
-//

@@ -1,7 +1,6 @@
 .projectSection .projectItem {
   margin-left: auto;
   margin-right: auto;
-  // width: 10%;
   font-size: 1.5em;
   color: #24396E;
   padding-left: 10px;
@@ -48,28 +47,16 @@
 .projectItemPic {
   margin-left: auto;
   margin-right: auto;
-// <<<<<<< HEAD
-//   // max-width: 30%;
-// =======
   max-width: 30%;
-// >>>>>>> portfolio/master
-  width: auto;
-  border: 3px solid #24396E;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  max-height: 500px;
-// <<<<<<< HEAD
-//   // height: auto;
-// }
+  height: auto;
+ }
 //
-// .slideshowButtons {
-//   position: relative;
-// =======
-//   height: auto;
-// }
+.slideshowButtons {
+  position: relative;
+  height: auto;
+}
 //
-// .slideshowButtons {
-// >>>>>>> portfolio/master
+.slideshowButtons {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -80,14 +67,3 @@
 .slideshowButtons:hover {
   cursor: pointer;
 }
-// <<<<<<< HEAD
-//
-// .projectImages {
-//   height: 500px;
-// }
-//
-// #trail-screenshot1 #trail-screenshot2 #trail-screenshot3 #trail-screenshot4 {
-//   height: 100%;
-// }
-// =======
-// >>>>>>> portfolio/master

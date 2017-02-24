@@ -6,4 +6,5 @@ class ApplicationController < ActionController::Base
   def index
     render 'portfolio/index'
   end
+
 end

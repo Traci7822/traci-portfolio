@@ -34,6 +34,10 @@ $(document).ready(function() {
     showProjectSections(this);
   });
 //
+  $(".resumeImage").click(function(event) {
+    event.preventDefault();
+    showProjectSections(this);
+  })
 });
 
 function hideAllSections() {
@@ -45,6 +49,7 @@ function hideAllSections() {
   $("#trailInfo-content").hide();
   $("#altFuel-content").hide();
   $("#yogaFlow-content").hide();
+  $("#resume-image-content").hide();
 }
 
 

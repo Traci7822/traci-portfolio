@@ -40,13 +40,6 @@
   width: 100%;
 }
 
-.resumeLinks {
-  margin-top: 50px;
-  // width: 75%;
-  // text-align: center;
-  // margin-left: 10%;
-}
-
 .resumeItem {
   background-color: lighten(#9cc9de, 10%);
   color: #24396E;
@@ -58,7 +51,6 @@
 
 .resumeSection {
   background-color: #9cc9de;
-  padding-top: 35px;
   margin-bottom: 50px;
   width: 75%;
   margin-left: auto;
@@ -79,8 +71,6 @@
 
 hr {
   border: 1px solid #72B2CE;
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 #columnWrapper {
@@ -125,5 +115,14 @@ hr {
   margin-left: auto;
   margin-right: auto;
   padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.spacing {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.links {
   padding-bottom: 50px;
 }

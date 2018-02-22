@@ -1,0 +1,39 @@
+<div class="projectDisplay">
+  <h1>COGCC Well Complaints</h1>
+  <div class="projectDescription">
+    <h3>
+      Working with data from the Colorado Oil and Gas Conservation Commission and in collaboration with KGNU community radio, COGCC Well Complaints is an interactive map demonstrating complaints recieved regarding oil and gas wells based on location and density. The map and it's features we're built using D3.js.
+    </h3>
+  </div>
+
+  <div class="projectImages">
+    <%= link_to image_tag("cogcc.png", :alt => "cogcc_well_complaints", :class => "cogccPic project projectItemPic", :id => "cogcc"), image_path("cogcc.png"), :target => "blank" %>
+  </div>
+
+  <h4>Click on a picture to see it full-sized</h4>
+  <h3><a href="https://cogcc-well-complaints.herokuapp.com/" target="_blank">https://cogcc-well-complaints.herokuapp.com/</a></h3>
+
+  <div class="projectReturn">
+    <a href="#" class="navItem" id="projects">Return to Projects</a>
+  </div>
+</div>
+
+<script>
+  var fuelSlideIndex = 1;
+  showFuelDivs(fuelSlideIndex);
+
+  function plusFuelDivs(n) {
+    showFuelDivs(fuelSlideIndex += n);
+  }
+
+  function showFuelDivs(n) {
+    var i;
+    var x = document.getElementsByClassName('cogccPic');
+    if (n > x.length) {fuelSlideIndex = 1}
+    if (n < 1) {fuelSlideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[fuelSlideIndex-1].style.display = "block";
+  }
+</script>
